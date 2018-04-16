@@ -1,0 +1,51 @@
+body {
+    background:url(../images/background.png);
+}
+
+#main {
+    width: 570px;
+    height: 770px;
+    margin-top: 180px;
+}
+
+#main .row .logo img{
+    width: 454px;
+    height: 87px;
+    margin: 0 57px;
+}
+
+#main .row .logo_sub_text p{
+    font-family: 'NanumSquareRound', 'Gulim';
+    font-size: 16px;
+    color: rgba(255, 214, 219, 255);
+    text-align: center;
+    margin:72px 133px 0 133px;
+}
+
+#main .row .lsloganogo img{
+    width: 569px;
+    height: 217px;
+    margin-top: 21px;
+}
+
+#main .row .submit .btn{
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    width: 440px;
+    height: 110px;
+    margin: 55px 64px 0 64px;
+    padding: 34px 66px;
+}
+
+#main .row .link{
+    margin: 105px 138px 0 138px;
+    padding:0px 0px 180px 0px;
+}
+
+#main .row .link a{
+    margin-right: 36px;
+}
+
+#main .row .link a:last-child{
+    margin-right: 0;
+}
