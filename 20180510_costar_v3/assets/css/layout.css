@@ -76,7 +76,7 @@ header {
 
 #contents dt {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 255);
     text-align: center;
     font-weight: 800;
@@ -117,7 +117,6 @@ header {
     overflow: hidden;
 }
 
-
 #contents #button a:nth-child(1) {
     float: left;
 }
@@ -125,7 +124,6 @@ header {
 #contents #button a:nth-child(2) {
     float: right;
 }
-
 
 #contents #link_btn {
     width:270px;
@@ -158,11 +156,89 @@ header {
     padding: 0 13px;
 }
 
-#footer a::before {
-    font-size: 12px;
-    padding: 0 13px;
-}
-
 #footer a.privacy {
     font-weight: bold;
+}
+
+#footer_mo {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    main {
+        width: auto;
+        height: auto;
+    }
+    
+    #header {
+        position: static;
+        text-align: center;
+        padding-top: 10px;
+        padding-left:75%;
+    }
+
+    #header img:nth-child(1){
+        position: static;
+    }
+
+    #header img:nth-child(2){
+        display: none;
+    }
+
+    #header img:nth-child(3){
+        display: none;
+    }
+
+    .swing {
+        animation: swing ease-in-out 1s infinite alternate;
+        transform-origin: center 70px;
+    }
+
+    #contents {
+        width: auto;
+        padding-top: 25px;
+    }
+
+    #contents dt {
+        font-size: 1.8rem;
+    }
+
+    #contents dd {
+        font-size: 1rem;
+    }
+
+    #contents #button {
+        width:auto;
+        padding-top: 55px;
+        overflow: hidden;
+    }
+    
+    #contents #button a:nth-child(1) {
+        width:100%;
+    }
+    
+    #contents #button a:nth-child(2) {
+        width:100%;
+    }
+
+/* ####################### */
+
+    #footer {
+        width: auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #footer span.gubun {
+        padding: 0 15px;
+    }
+
+    #footer #f_pc{
+        display: none;
+    }
+
+    #footer #f_mp{
+        display: block;
+    }
+
 }
