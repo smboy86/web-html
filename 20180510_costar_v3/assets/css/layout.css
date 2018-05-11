@@ -1,0 +1,164 @@
+/*
+1) 속성은 형태 - 흐름 - 위치 - 크기 - 박스모델 - 배경 - 글자 - 기타 순으로 지정한다.
+a {
+    display: inline-block; float: left; clear: both; 
+    position: left; left:10px; right:10px; top:10px; bottom: 10px; z-index:10px;
+    width:10px;height:10px;overflow: hidden;
+    margin:0 auto; padding: 0 0 0 0; border: 1px solid red;
+    background: url('./test.gif');
+    text-align:center; font-size:10px;
+    /// 기타 ///
+}
+*/
+
+/* Layout */
+/*
+    전체 가로: 유동
+    전체 세로: 949px
+*/
+body {max-width:1923px;}
+main {width:790px; height:950px; margin:0 auto;}
+
+header {width:100%;height:206px;}
+#contents {width:100%;height:664px;}
+footer {width:100%;height:79px;}
+
+/* Style */
+body {
+    background:url(../images/background.jpg) no-repeat;
+    background-size: auto 949px;
+}
+
+header {
+    height:20%;
+    position: relative;
+}
+
+#header {
+    position: absolute;
+    left:50%; 
+    transform:translateX(-50%);
+    bottom: 0;
+    width:556px;
+    margin:0 auto;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#header img:nth-child(1){
+    position: absolute;
+    width:auto; height:auto;
+    margin:auto 0;
+    top:0; bottom:0; left:0; right:0;
+}
+
+#header img:nth-child(2){
+    position: absolute;
+    width:auto; height:auto;
+    margin:auto 0;
+    top:0; bottom:0; left:405px; right:0;
+}
+
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center 150px;
+}
+
+@keyframes swing {
+    0% { transform: rotate(7deg); }
+    100% { transform: rotate(-7deg); }
+}
+
+/* #################   content   ########################### */
+#contents {
+    padding-top: 45px;
+}
+
+#contents dt {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    padding-top:10px;
+}
+
+#contents dd {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 9.7836pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+#contents dd:nth-of-type(2) { /* dt dl 을 구분하기가 애매하당 */
+    padding-top: 22px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#contents dd:nth-of-type(3) { /* dt dl 을 구분하기가 애매하당 */
+    padding-top: 47px;
+    font-size: 16px;
+}
+
+#contents dd:nth-of-type(4) { /* dt dl 을 구분하기가 애매하당 */
+    padding-top: 9px;
+    font-size: 16px;
+}
+
+#contents #button {
+    width:789px;
+    margin:0 auto;
+    padding-top: 75px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+#contents #button a:nth-child(1) {
+    float: left;
+}
+
+#contents #button a:nth-child(2) {
+    float: right;
+}
+
+
+#contents #link_btn {
+    width:270px;
+    margin:0 auto;
+    padding-top: 77px;
+    text-align: center;
+}
+
+#contents #link_btn a:nth-child(2) {
+    padding:0 40px;
+}
+
+/* #################   footer   ########################### */
+#footer {
+    width: 444px;
+    margin:0 auto;
+    color: #e5e5e5;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+
+#footer a {
+    color: #e5e5e5;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+
+#footer span.gubun {
+    font-size: 12px;
+    padding: 0 13px;
+}
+
+#footer a::before {
+    font-size: 12px;
+    padding: 0 13px;
+}
