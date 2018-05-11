@@ -162,3 +162,7 @@ header {
     font-size: 12px;
     padding: 0 13px;
 }
+
+#footer a.privacy {
+    font-weight: bold;
+}
