@@ -160,7 +160,7 @@ header {
     font-weight: bold;
 }
 
-#footer_mo {
+#footer #f_mo{
     display: none;
 }
 
@@ -237,7 +237,7 @@ header {
         display: none;
     }
 
-    #footer #f_mp{
+    #footer #f_mo{
         display: block;
     }
 
