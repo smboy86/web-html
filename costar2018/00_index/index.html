@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Added meta tags -->
+    <meta name="description" content="코스타 홈페이지에 오신 것을 환영합니다."><!-- 페이지에 대한 간단한 설명 (최대 150 자) -->
+    <meta name="subject" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star #코워킹스페이스 #공유공간 #무인카페 #콜라보 #문화공유공간 #문화공간"><!-- 사이트 주제에 대한 간략한 설명 -->
+    <meta name="url" content="http://co-star.kr/"><!-- 전체 도메인 이름 또는 웹 주소 -->
+    <!-- Social meta tags -->
+    <!-- Facebook -->
+    <meta property="fb:app_id" content="123456789">
+    <meta property="og:url" content="http://co-star.kr/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코스타 : Better together">
+    <meta property="og:image" content="http://co-star.kr/index_social.jpg">
+    <meta property="og:description" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star">
+    <meta property="og:site_name" content="코스타 : Better together">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="article:author" content="costar-admin">
+    <title>코스타 : Better together</title>
+    <!-- ### Link General tags ###-->
+    <link rel="canonical" href="http://co-star.kr/index.html"> <!-- Naver SEO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- ### CSS ### -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <style>
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+    <!-- ### JS ### -->
+    <script src="./assets/js/jquery-1.8.3.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper.min.js"></script>
+
+    <script>
+        var aTop = 0;
+        var b_ani = true;
+
+        $(window).scroll(function(event){
+            aTop = $('.place-info').offset().top;
+            
+            if(b_ani && ($(this).scrollTop() >= (aTop-100) && $(this).scrollTop() <= (aTop+100))){
+                b_ani = false;
+                fn_aniUp();
+            }
+        });
+
+        function fn_aniUp(){
+            $('.place-info .place-a').addClass('down');
+            $('.place-info .place-b').addClass('up');
+
+            setTimeout(fn_aniDown, 2000);
+        }
+
+        function fn_aniDown(){
+            $('.place-info .place-a').removeClass('down');
+            $('.place-info .place-b').removeClass('up');
+            
+            b_ani = true;
+        }
+
+        $(document).ready(function(){
+            // JQuery Event
+            // $('.place-box').hover(
+            //     function(){
+            //         $('.place-info .place-a').addClass('down');
+            //         $('.place-info .place-b').addClass('up');
+            //     }, function(){
+            //         $('.place-info .place-a').removeClass('down');
+            //         $('.place-info .place-b').removeClass('up');
+            //     }
+            // );
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#"><img src="./assets/images/logo-costar.png" alt="로고-코스타"></a></div>
+        <div id="gnb" class="gnb">
+            <ul>
+                <li><a href="#">코스타</a></li>
+                <li><a href="#">코워킹스페이스</a></li>
+                <li><a href="#">공간대여</a></li>
+                <li><a href="#">프로그램</a></li>
+                <li><a href="#">뉴스피드</a></li>
+            </ul>
+        </div>
+        <div class="ico-menu"><a href="#"><img src="./assets/images/icon_hamberger.png" alt="메뉴버튼"></a></div>
+    </header>
+    <section id="main-banner">
+     <!-- Swiper -->
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="./assets/images/img-banner-1.jpg" alt="">
+                    <div class="banner-text"></div>
+                </a>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    </section>
+    <section id="main-program">
+        <div class="place">
+            <div class="place-info">
+                <div class="place-a">
+                    <img src="./assets/images/img-place-1.jpg" alt="장소a">
+                </div>
+                <div class="place-b">
+                    <img src="./assets/images/img-place-2.jpg" alt="장소b">
+                </div>
+                <div class="place-box">
+                    <ul>
+                        <li class="title">코스타 공간 소개</li>
+                        <li class="txt">1층 문화복합공간</li>
+                        <li class="txt">2층 코워킹스페이스</li>
+                        <li class="btn"><a href="#">구경하러가기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="program">
+            <div class="program-line"></div>
+            <sapn class="program-title">코스타 프로그램</sapn>
+            <div class="p-list">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/img-program-1.jpg" alt="프로그램1">
+                            <span class="p-type">친목</span>
+                            <span class="p-status">모집중</span>
+                            <dl>
+                                <dt>옥상 피크닉 친구들과 모임</dt>
+                                <dd>일시 : 2018.08.20</dd>
+                                <dd>장소 : 코스타 1F 라운지</dd>
+                                <dd>참여인원: <span class="txt_red">10</span>/16</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/img-program-1.jpg" alt="프로그램1">
+                            <span class="p-type">취미</span>
+                            <span class="p-status">모집중</span>
+                            <dl>
+                                <dt>옥상 피크닉 친구들과 모임</dt>
+                                <dd>일시 : 2018.08.20</dd>
+                                <dd>장소 : 코스타 1F 라운지</dd>
+                                <dd>참여인원: <span class="txt_red">10</span>/16</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/img-program-1.jpg" alt="프로그램1">
+                            <span class="p-type">클래스</span>
+                            <span class="p-status-finish">종료</span>
+                            <dl>
+                                <dt>옥상 피크닉 친구들과 모임</dt>
+                                <dd>일시 : 2018.08.20</dd>
+                                <dd>장소 : 코스타 1F 라운지</dd>
+                                <dd>참여인원: <span class="txt_red">10</span>/16</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="main-subBanner" style="background: #b181b8;">
+        <div class="sub-banner-img">
+            <a href="#">
+                <img src="./assets/images/img-subbanner.png" alt="서브 메인배너">
+            </a>
+        </div>
+    </section>
+    <section id="main-info">
+        <div class="info-box1">
+            <div class="insta">
+                <h3>인스타그램</h3>
+                <span class="main-insta-txt">#costar_space</span>
+                <div class="insta-list">
+                    <ul>
+                        <li><a href="#"><img src="./assets/images/img-instar-1.png" alt="인스타 사진1"></a></li>
+                        <li><a href="#"><img src="./assets/images/img-instar-2.png" alt="인스타 사진1"></a></li>
+                        <li><a href="#"><img src="./assets/images/img-instar-3.png" alt="인스타 사진1"></a></li>
+                        <li><a href="#"><img src="./assets/images/img-instar-4.png" alt="인스타 사진1"></a></li>
+                        <li><a href="#"><img src="./assets/images/img-instar-5.png" alt="인스타 사진1"></a></li>
+                        <li><a href="#"><img src="./assets/images/img-instar-6.png" alt="인스타 사진1"></a></li>
+                        <li><a href="#"><img src="./assets/images/img-instar-7.png" alt="인스타 사진1"></a></li>
+                        <li><a href="#"><img src="./assets/images/img-instar-8.png" alt="인스타 사진1"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notice">
+                <h3>공지사항</h3>
+                <span class="main-notice-txt">더보기 ></span>
+                <div class="notice-list">
+                    <ul>
+                        <li><a href="#">코스타 고객센터 휴무 안내<span class="notice-date">2018-08-31</span></a></li>
+                        <li><a href="#">발걸음이 스토리가 되는 도시작가들이 온다 "써본 사람"<span class="notice-date">2018-08-31</span></a></li>
+                        <li><a href="#">댄서들에게 공감투표하고 연습실 선물하세요!<span class="notice-date">2018-08-31</span></a></li>
+                        <li><a href="#">코스타 고객센터 휴무 안내<span class="notice-date">2018-08-31</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info-box2">
+            <h3>코스타 찾아오는 길</h3>
+            <div class="main-map">
+                <img src="./assets/images/img-mainMap.png" alt="지도">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-bar">
+                <div class="footer-logo">
+                    <img src="./assets/images/logo-costar-footer.png" alt="footer 로고">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">회사소개</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">이용약관</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">개인정보처리방침</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">운영정책</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">고객문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <div class="f-info-1">
+                    <ul>
+                        <li>상호명:코스타</li><span class="f-gubun">|</span>
+                        <li>대표:김세희</li><span class="f-gubun">|</span>
+                        <li>사업자등록증:000-00-000000</li><span class="f-gubun">|</span>
+                        <li>통신판매업신고번호: 0000-서울혜화-0000</li><span class="f-gubun">|</span>
+                        <li><a href="#">사업자등록정보 ></a></li>
+                    </ul>
+                </div>
+                <div class="f-info-2">
+                    <ul>
+                        <li>영업소재지:서울시 종로구 혜화동 1층</li><span class="f-gubun">|</span>
+                        <li>이메일: costar2018@naver.com</li>
+                    </ul>
+                </div>
+                <div class="f-info-3">
+                    <ul>
+                        <li>대표전화: 1599-4312 (평일 오전 10시 ~ 오후 6시)</li>
+                    </ul>
+                </div>
+                <div class="f-info-4">
+                    Copyright Co-star Corp. All Rights Reserced.
+                </div>
+                <div class="link_btn">
+                    <a href="https://blog.naver.com/costar2018" target="_blank"><img src="./assets/images/link-blog.gif" alt="네이버블로그"></a>
+                    <a href="https://www.instagram.com/the_costar/" target="_blank"><img src="./assets/images/link-insta.gif" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/%EC%BD%94%EC%8A%A4%ED%83%80-1204802939654417/" target="_blank"><img src="./assets/images/link-facebook.gif" alt="페이스북"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ### JS Body after Complete Dom ### -->  
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+</html>
