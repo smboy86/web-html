@@ -1,0 +1,512 @@
+/*
+1) 속성은 형태 - 흐름 - 위치 - 크기 - 박스모델 - 배경 - 글자 - 기타 순으로 지정한다.
+a {
+    display: inline-block; float: left; clear: both; 
+    position: left; left:10px; right:10px; top:10px; bottom: 10px; z-index:10px;
+    width:10px;height:10px;overflow: hidden;
+    margin:0 auto; padding: 0 0 0 0; border: 1px solid red;
+    background: url('./test.gif');
+    text-align:center; font-size:10px;
+    /// 기타 ///
+}
+*/
+
+/* Layout */
+header {width:100%;}
+section#main-banner {width:100%;margin:0 auto;margin-top:2px;}
+section#main-program {width:1140px;margin:0 auto;}
+section#program-list {width:1140px;height:auto;margin:0 auto;}
+footer {width:100%;height:330px;margin:0 auto;}
+
+/* Style */
+header div {
+    line-height: 85px;
+}
+
+header div img{
+    vertical-align: middle;
+}
+
+header .logo {
+    display: inline-block;
+    width:14%;
+    text-align: left;
+    padding-left: 30px;
+}
+
+header .gnb {
+    display: inline-block;
+    width:70%;
+    text-align: center;
+}
+
+header .gnb ul{
+    list-style: none;    
+}
+
+header #gnb ul li {
+    display:inline-block;
+}
+
+header #gnb ul li a {
+    padding:30px 2px;
+    margin: 0 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+header #gnb ul li a:hover {
+    color: #694ec2;
+    border-bottom:3px solid #694ec2;
+}
+
+header .ico-menu {
+    float:right;
+    padding-right: 30px;
+}
+
+#main-banner {
+    height:295px;
+    padding-top: 90px;
+    text-align: center;
+    background: url(../images/img-sub-banner.jpg);
+}
+
+#main-banner .banner-content{
+    width:330px;
+    height:113px;
+    margin:0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#main-banner .banner-content .banner-text{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+#main-banner .banner-content .banner-btns {
+    margin-top: 34px;
+}
+
+#main-banner .banner-content .banner-btns span.btn {
+    display: inline-block;
+    width: 149px;
+}
+
+
+#main-banner .banner-content .banner-btns a {
+    border-radius: 30px;
+    padding:10px 4px;
+}
+
+#main-banner .banner-content .banner-btns a:first-child{
+    font-size: 16px;
+    color: white;
+    background: #694ec2;
+    margin-right: 6px;
+}
+
+#main-banner .banner-content .banner-btns a:last-child{
+    font-size: 16px;
+    color: #694ec2;
+    background: white;
+    margin-left: 6px;
+}
+
+
+section#main-program {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+#main-program .left-box {
+    float:left;
+    width: 688px;
+}
+
+#main-program .right-box {
+    float:right;
+    width: 420px;
+    margin-left:23px;
+}
+
+.program-cal {
+    height: 453px;
+}
+
+.program-cal .cal-header {
+    width: 420px;
+    height: 117px;
+    background: #694ec2
+}
+
+.program-cal .cal-header .btn-prev {
+    width:57px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+
+.program-cal .cal-header img {
+    margin-top: 41px;
+}
+
+.program-cal .cal-header .cal-main {
+    display: inline-block;
+    width:290px;
+    height:117px;
+    text-align: center;
+}
+
+.program-cal .cal-header .cal-main .cal-year-month {
+    margin-top: 20px;
+}
+
+.program-cal .cal-header .cal-main .cal-text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+.program-cal .cal-header .cal-main ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.program-cal .cal-header .cal-main ul li a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #afa3d1;
+}
+
+.program-cal .cal-header .cal-main ul li.active a {
+    color: white;
+}
+
+.program-cal .cal-header .btn-next {
+    width:57px;
+    height:110px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.program-cal .cal-list {
+    height:335px;
+    border:1px solid #e5e5e5;
+}
+
+/* 
+참고용
+.program-cal .cal-list span {
+    line-height: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+} */
+
+.program-cal .cal-list .cal-list-box {
+    width: 378px;
+    height: 285px;
+    margin: 0 auto;
+    margin-top: 25px;
+    overflow: auto;
+}
+
+.program-cal .cal-list .cal-list-box ul li {
+    height: 60px;
+    margin-top: 10px;
+}
+
+
+.program-cal .cal-list .cal-list-box ul li:first-child {
+    margin-top: 0;
+}
+
+.program-cal .cal-list .cal-list-box ul li .datebox {
+    width: 60px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.program-cal .cal-list .cal-list-box span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.program-cal .cal-list .cal-list-box ul li .datebox span {
+    padding-top: 5px;
+    display: block;
+}
+
+.program-cal .cal-list .cal-list-box ul li .datebox span:first-child {
+    height:50%;
+    font-size: 24px;
+}
+
+.program-cal .cal-list .cal-list-box ul li .datebox span:last-child {
+    height:40%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #999999;
+}
+
+.program-cal .cal-list .cal-list-box ul li .cal-schedule {
+    width: 275px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+}
+
+.program-cal .cal-list .cal-list-box ul li .cal-schedule span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.program-cal .cal-list .cal-list-box ul li .cal-schedule span:first-child {
+    padding: 5px 0;
+}
+
+.program-cal .cal-list .cal-list-box ul li .cal-schedule span:last-child {
+    font-weight: 600;
+    color: #bd56bf;
+}
+
+#program-list .program {
+    margin-top: 80px;
+    text-align: center;
+    
+}
+
+#program-list .program .program-header {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
+
+#program-list .program .program-header .program-tag-list {
+    float: left;
+    margin-left: 15px;
+}
+
+#program-list .program .program-header .program-tag-list ul li{
+    width: 56px;
+    height: 29px;
+    display: inline-block;
+}
+
+
+#program-list .program .program-header .program-tag-list ul li:first-child {
+    line-height: 29px;
+    font-weight: 600;
+    color: white;
+    background: url(../images/icon-tag.png) no-repeat;
+}
+
+#program-list .program .program-header .program-dropbox {
+    float: right;
+    margin-right: 15px;
+}
+
+
+#program-list .program .p-list{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#program-list .program .p-list{
+    display: inline-block;
+}
+
+#program-list .program .p-list ul li{
+    display:inline-block;
+    position: relative;
+    margin: 0 4px;
+    margin-bottom: 90px;
+}
+
+
+#program-list .program .p-list ul li:last-child{
+    margin-right: 0;
+}
+
+#program-list .program .p-list ul li:nth-child(4n){
+    /* margin-left: 0; */
+}
+
+
+#program-list .program .p-list img {
+    width:362px;
+    height:240px;
+}
+
+#program-list .program .p-list span.p-type {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-attr.png);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+}
+
+#program-list .program .p-list span.p-status {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-ing.png);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+}
+
+#program-list .program .p-list span.p-status-finish {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-finish.png);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+}
+
+#program-list .program .p-list ul li dl {
+    text-align: left;
+}
+
+#program-list .program .p-list ul li dl dt {
+    margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+#program-list .program .p-list ul li dl dd {
+    height:24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+#program-list .program .p-list ul li dl dd:nth-child(2) {
+    margin-top: 15px;
+}
+
+
+#program-list .program .p-more {
+    padding-bottom: 140px;
+}
+
+#program-list .program .p-more:hover img {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##################### footer ##################### */
+
+
+footer {
+    min-width:1140px;
+    background: #f5f5f5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+}
+
+footer .footer-top {
+    height: 100px;
+    border-bottom: 1px solid #dddddd;
+}
+
+footer .footer-top .footer-bar{
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer .footer-top .footer-bar .footer-logo {
+    float:left;
+    margin-top: 40px;
+}
+
+footer .footer-top .footer-bar .footer-menu  {
+    float:right;
+    margin-top: 40px;
+}
+
+footer .footer-top .footer-bar .footer-menu ul li {
+    display: inline-block;
+}
+
+footer .footer-top .footer-bar .footer-menu ul li a {
+    font-size: 14px;
+    color: #808080;
+}
+
+footer .footer-bottom .footer-info {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #808080;
+}
+
+footer .footer-bottom .footer-info .f-info-1 {
+    margin-top: 35px;
+}
+
+footer .footer-bottom .footer-info .f-info-2 {
+    margin-top: 15px;
+}
+
+footer .footer-bottom .footer-info .f-info-3 {
+    margin-top: 15px;
+}
+
+footer .footer-bottom .footer-info .f-info-4 {
+    margin-top: 42px;
+}
+
+footer .footer-bottom .footer-info ul li {
+    display: inline-block;
+}
+
+footer .footer-bottom .footer-info .link_btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+footer .footer-bottom .footer-info .link_btn a {
+    margin-right:29px;
+}
+
+footer .footer-bottom .footer-info .link_btn a:last-child {
+    margin-right:0;
+}
