@@ -12,8 +12,8 @@ a {
 */
 
 /* Layout */
-header {width:100%;height:90px;}
-section#main-banner {width:100%;margin:0 auto;}
+header {width:100%;}
+section#main-banner {width:100%;margin:0 auto; margin-top:2px;}
 section#main-program {width:1140px;margin:0 auto;}
 section#main-subBanner {width:100%;height:240px;margin:0 auto;}
 section#main-info {width:1140px;height:822px;margin:0 auto;}
@@ -50,21 +50,18 @@ header #gnb ul li {
 }
 
 header #gnb ul li a {
-    padding:30px 22px;
+    padding:30px 2px;
+    margin: 0 22px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #000000;
 }
-/* 
-header #gnb ul li:first-child a {
-    padding-left:0px;
-}
 
-header #gnb ul li:last-child a {
-    padding-right: 0px;
-} 
-*/
+header #gnb ul li a:hover {
+    color: #694ec2;
+    border-bottom:3px solid #694ec2;
+}
 
 header .ico-menu {
     float:right;
