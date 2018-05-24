@@ -307,6 +307,12 @@ section#main-program {
     background: url(../images/icon-tag.png) no-repeat;
 }
 
+#program-list .program .program-header .program-tag-list ul li.active a {
+    font-weight: bold;
+    color: #694ec2;
+}
+
+
 #program-list .program .program-header .program-dropbox {
     float: right;
     margin-right: 15px;
@@ -326,7 +332,7 @@ section#main-program {
     display:inline-block;
     position: relative;
     margin: 0 4px;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 
@@ -350,7 +356,7 @@ section#main-program {
     right: 80px;
     width:65px;
     height:65px;
-    background:url(../images/icon-program-attr.png);
+    background:url(../images/icon-program-attr.png) no-repeat;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
     color: white;
@@ -363,7 +369,7 @@ section#main-program {
     right: 5px;
     width:65px;
     height:65px;
-    background:url(../images/icon-program-ing.png);
+    background:url(../images/icon-program-ing.png) no-repeat;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
     color: white;
@@ -376,7 +382,7 @@ section#main-program {
     right: 10px;
     width:65px;
     height:65px;
-    background:url(../images/icon-program-finish.png);
+    background:url(../images/icon-program-finish.png) no-repeat;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
     color: white;
@@ -415,17 +421,6 @@ section#main-program {
 #program-list .program .p-more:hover img {
     
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ##################### footer ##################### */
 
