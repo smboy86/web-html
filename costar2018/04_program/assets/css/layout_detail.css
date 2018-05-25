@@ -1,0 +1,389 @@
+/*
+1) 속성은 형태 - 흐름 - 위치 - 크기 - 박스모델 - 배경 - 글자 - 기타 순으로 지정한다.
+a {
+    display: inline-block; float: left; clear: both; 
+    position: left; left:10px; right:10px; top:10px; bottom: 10px; z-index:10px;
+    width:10px;height:10px;overflow: hidden;
+    margin:0 auto; padding: 0 0 0 0; border: 1px solid red;
+    background: url('./test.gif');
+    text-align:center; font-size:10px;
+    /// 기타 ///
+}
+*/
+
+/* Layout */
+header {width:100%;margin-bottom: 2px;}
+header.detail {border-bottom:1px solid #e5e5e5;}
+section#container {width:1140px;margin:0 auto;}
+footer {width:100%;height:330px;margin:0 auto;}
+
+/* Style */
+header div {
+    line-height: 85px;
+}
+
+header div img{
+    vertical-align: middle;
+}
+
+header .logo {
+    display: inline-block;
+    width:14%;
+    text-align: left;
+    padding-left: 30px;
+}
+
+header .gnb {
+    display: inline-block;
+    width:70%;
+    text-align: center;
+}
+
+header .gnb ul{
+    list-style: none;    
+}
+
+header #gnb ul li {
+    display:inline-block;
+}
+
+header #gnb ul li a {
+    padding:30px 2px;
+    margin: 0 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+header #gnb ul li a:hover {
+    color: #694ec2;
+    border-bottom:3px solid #694ec2;
+}
+
+header .ico-menu {
+    float:right;
+    padding-right: 30px;
+}
+
+/* ##################### header end ##################### */
+
+
+section#container {
+    position: relative;
+    width: 1140px;
+    min-height: 100px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+#container .p-header {
+    height: 80px;
+    overflow: hidden;
+}
+
+#container .p-header .p-title-bar {
+    width: calc(100% - 452px);
+    height: 35px;
+}
+
+#container .p-header .p-title {
+    float:left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#container .p-header .p-icon-bar {
+    float:right;
+}
+
+#container .p-header .p-icon-bar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#container .p-header .p-icon-bar ul li:last-child {
+    margin-right: 0;
+}
+
+
+#container .contents {
+    position: absolute;
+    width: calc(100% - 452px);  /* 728px; calc(100%-312px);   412 */
+    height: 100%;
+    border:1px solid red;
+}
+
+/* contents 공통 */
+#container .contents .p-sub-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#container .contents .line{
+    width: 30px;
+    border-top: 2px solid #694ec2;
+    margin: 30px 0;
+}
+
+#container .contents p {  /* contents 텍스트 공통 */
+    margin-bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+}
+
+#container .contents .p-content-1 {
+    
+}
+
+#container .contents .p-content-2 {
+    margin-top: 60px;
+}
+
+#container .contents .p-content-2 img {
+    margin-top: 20px;
+}
+
+#container .contents .p-content-3 {
+    margin-top: 60px;
+}
+
+#program-list .program .p-list span.p-type {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-attr.gif) no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+}
+
+#program-list .program .p-list span.p-status {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-ing.gif) no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+}
+
+#program-list .program .p-list span.p-status-finish {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-finish.gif) no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+}
+
+
+
+/* 
+#container .contents .p-header .p-main-img {
+    padding-top: 55px;
+} */
+
+
+
+
+
+
+
+
+
+
+/*
+이미지 동그랗게
+.photo3 {
+    width: 100px; height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+*/
+
+
+
+/* ################### Quick - menu ################## */
+
+#container .quick-info {
+    width:412px;
+    position: absolute;
+    left: calc(100% - 412px);
+}
+
+#container .quick-info ul li { 
+    display: inline-block;
+    width:100%;
+    height: 40px;
+}
+
+#container .quick-info ul li:nth-last-child(1) { 
+    height: 80px;
+}
+
+#container .quick-info ul li:nth-last-child(2) { 
+    height: 80px;
+}
+
+#container .quick-info ul li p {
+    display: inline-block;
+    width: 97px;
+    margin-left: 42px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #694ec2;
+}
+
+#container .quick-info ul li span {
+    margin-left: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#container .quick-info ul li span.txt_red {
+    margin-right: -20px;
+}
+
+#container .quick-info ul li a.btn-apply {
+    display: inline-block;
+    width:320;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: white;
+    background: #694ec2;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-left: 42px;
+    padding: 14px 130px;
+}
+
+#container .quick-info ul li a.btn-favorite {
+    display: inline-block;
+    width:320;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #694ec2;
+    background: white;
+    border:2px solid #694ec2;
+    border-radius: 40px;
+    margin-left: 42px;
+    padding: 14px 113px;
+}
+
+#container .quick-info ul li a.btn-favorite img {
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+#container .quick-info ul li a.btn-favorite .cnt {
+    display:inline-block;
+    width: 26px;
+    margin-left: 5px;
+}
+
+
+/* ##################### footer start ##################### */
+
+
+footer {
+    min-width:1140px;
+    background: #f5f5f5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+}
+
+footer .footer-top {
+    height: 100px;
+    border-bottom: 1px solid #dddddd;
+}
+
+footer .footer-top .footer-bar{
+    width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer .footer-top .footer-bar .footer-logo {
+    float:left;
+    margin-top: 40px;
+}
+
+footer .footer-top .footer-bar .footer-menu  {
+    float:right;
+    margin-top: 40px;
+}
+
+footer .footer-top .footer-bar .footer-menu ul li {
+    display: inline-block;
+}
+
+footer .footer-top .footer-bar .footer-menu ul li a {
+    font-size: 14px;
+    color: #808080;
+}
+
+footer .footer-bottom .footer-info {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #808080;
+}
+
+footer .footer-bottom .footer-info .f-info-1 {
+    margin-top: 35px;
+}
+
+footer .footer-bottom .footer-info .f-info-2 {
+    margin-top: 15px;
+}
+
+footer .footer-bottom .footer-info .f-info-3 {
+    margin-top: 15px;
+}
+
+footer .footer-bottom .footer-info .f-info-4 {
+    margin-top: 42px;
+}
+
+footer .footer-bottom .footer-info ul li {
+    display: inline-block;
+}
+
+footer .footer-bottom .footer-info .link_btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+footer .footer-bottom .footer-info .link_btn a {
+    margin-right:29px;
+}
+
+footer .footer-bottom .footer-info .link_btn a:last-child {
+    margin-right:0;
+}
