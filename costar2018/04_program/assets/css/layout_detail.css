@@ -14,7 +14,7 @@ a {
 /* Layout */
 header {width:100%;margin-bottom: 2px;}
 header.detail {border-bottom:1px solid #e5e5e5;}
-section#container {width:1140px;margin:0 auto;}
+section#container {width:1140px;height:auto;margin:0 auto;}
 footer {width:100%;height:330px;margin:0 auto;}
 
 /* Style */
@@ -72,14 +72,14 @@ header .ico-menu {
 section#container {
     position: relative;
     width: 1140px;
-    min-height: 100px;
     margin-top: 80px;
+    margin-bottom: 160px;
     overflow: hidden;
 }
 
 #container .p-header {
-    height: 80px;
     overflow: hidden;
+    padding-bottom: 55px;
 }
 
 #container .p-header .p-title-bar {
@@ -108,12 +108,9 @@ section#container {
     margin-right: 0;
 }
 
-
 #container .contents {
-    position: absolute;
     width: calc(100% - 452px);  /* 728px; calc(100%-312px);   412 */
-    height: 100%;
-    border:1px solid red;
+    float: left;
 }
 
 /* contents 공통 */
@@ -139,7 +136,56 @@ section#container {
 }
 
 #container .contents .p-content-1 {
-    
+    position: relative;
+}
+
+#container .contents .p-content-1 img {
+    width: 100%;
+}
+
+#container .contents .p-main-img span.p-type {
+    position: absolute;
+    top: 25px;
+    right: 105px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-attr.gif) no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+}
+
+#container .contents .p-main-img span.p-status {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-ing.gif) no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+}
+
+#container .contents .p-main-img span.p-status-finish {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width:65px;
+    height:65px;
+    background:url(../images/icon-program-finish.gif) no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    line-height: 65px;
+    text-align: center;
 }
 
 #container .contents .p-content-2 {
@@ -147,6 +193,7 @@ section#container {
 }
 
 #container .contents .p-content-2 img {
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -154,79 +201,97 @@ section#container {
     margin-top: 60px;
 }
 
-#program-list .program .p-list span.p-type {
-    position: absolute;
-    top: 5px;
-    right: 80px;
-    width:65px;
-    height:65px;
-    background:url(../images/icon-program-attr.gif) no-repeat;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
-    color: white;
-    line-height: 65px;
+#container .contents .p-content-3 ul li {
+    display: inline-block;
+    width: 95px;  /* 15% */
+    margin-right: 15px;
+    text-align: center;
 }
 
-#program-list .program .p-list span.p-status {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width:65px;
-    height:65px;
-    background:url(../images/icon-program-ing.gif) no-repeat;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
-    color: white;
-    line-height: 65px;
+#container .contents .p-content-3 ul li:nth-child(6) {
+    margin-right: 0;
 }
 
-#program-list .program .p-list span.p-status-finish {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    width:65px;
-    height:65px;
-    background:url(../images/icon-program-finish.gif) no-repeat;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
-    color: white;
-    line-height: 65px;
-}
-
-
-
-/* 
-#container .contents .p-header .p-main-img {
-    padding-top: 55px;
-} */
-
-
-
-
-
-
-
-
-
-
-/*
-이미지 동그랗게
-.photo3 {
+#container .contents .p-members-profile { /* 공통 */
     width: 100px; height: 100px;
     object-fit: cover;
     border-radius: 50%;
 }
 
+#container .contents .p-content-3 ul li .text-name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
 
-*/
+#container .contents .p-content-4 {
+    margin-top: 60px;
+}
 
+#container .contents .p-content-4 .p-hostcard {
+    border: 1px solid #e5e5e5;
+}
+
+#container .contents .p-content-4 .p-hostcard-box {
+    width: 620px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#container .contents .p-content-4 .p-hostcard-box .h-profile-intro {
+    padding: 30px 0 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#container .contents .p-content-4 .p-hostcard-box .h-content {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#container .contents .p-content-4 .p-hostcard-box .h-content .h-title {
+    height: 30px;
+    line-height: 27px;
+}
+
+#container .contents .p-content-4 .p-hostcard-box .h-content span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    margin: 0 6px;
+}
+
+#container .contents .p-content-4 .p-hostcard-box .h-tags {
+    float: left;
+    padding: 10px 0;
+}
+
+#container .contents .p-content-4 .p-hostcard-box .h-tags ul li:first-child {
+    width: 72px;
+    line-height: 29px;
+    font-weight: 600;
+    color: white;
+    background: url(../images/icon-tag-detail.png) no-repeat;
+    text-align: center;
+}
+
+#container .contents .p-content-4 .p-hostcard-box .h-tags ul li{
+    display: inline-block;
+    height: 28px;
+    margin-right: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
 
 
 /* ################### Quick - menu ################## */
 
 #container .quick-info {
     width:412px;
-    position: absolute;
+    float: right;
     left: calc(100% - 412px);
 }
 
