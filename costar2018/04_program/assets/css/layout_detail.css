@@ -213,7 +213,8 @@ section#container {
 }
 
 #container .contents .p-members-profile { /* 공통 */
-    width: 100px; height: 100px;
+    width: 100px; 
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
 }

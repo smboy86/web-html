@@ -340,10 +340,6 @@ section#main-program {
     margin-right: 0;
 }
 
-#program-list .program .p-list ul li:nth-child(4n){
-    /* margin-left: 0; */
-}
-
 
 #program-list .program .p-list img {
     width:362px;
@@ -418,9 +414,6 @@ section#main-program {
     padding-bottom: 140px;
 }
 
-#program-list .program .p-more:hover img {
-    
-}
 
 /* ##################### footer ##################### */
 

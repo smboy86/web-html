@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Added meta tags -->
+    <meta name="description" content="코스타 홈페이지에 오신 것을 환영합니다."><!-- 페이지에 대한 간단한 설명 (최대 150 자) -->
+    <meta name="subject" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star #코워킹스페이스 #공유공간 #무인카페 #콜라보 #문화공유공간 #문화공간"><!-- 사이트 주제에 대한 간략한 설명 -->
+    <meta name="url" content="http://co-star.kr/"><!-- 전체 도메인 이름 또는 웹 주소 -->
+    <!-- Social meta tags -->
+    <!-- Facebook -->
+    <meta property="fb:app_id" content="123456789">
+    <meta property="og:url" content="http://co-star.kr/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코스타 : Better together">
+    <meta property="og:image" content="http://co-star.kr/index_social.jpg">
+    <meta property="og:description" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star">
+    <meta property="og:site_name" content="코스타 : Better together">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="article:author" content="costar-admin">
+    <title>코스타 : Better together</title>
+    <!-- ### Link General tags ###-->
+    <link rel="canonical" href="http://co-star.kr/index.html"> <!-- Naver SEO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- ### CSS ### -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/layout_detail.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <!-- ### JS ### -->
+    <script src="./assets/js/jquery-1.8.3.min.js"></script>
+    <script>
+        var posQuickInfo = 0;
+        var heightDocument = 0;
+        var heightQuickInfo = 0;
+        var heightFooter = 0;
+
+        $(document).ready(function(){
+            heightDocument = $(document).height();
+            posQuickInfo = $("#container .quick-info").offset().top;
+            heightQuickInfo = parseInt($("#container .quick-info").css("height"));
+            heightFooter = parseInt($("footer").css("height"))
+        });
+
+        $(window).scroll(function(){  
+            var movePosition = $(window).scrollTop() - posQuickInfo;
+            if($(window).scrollTop() > posQuickInfo && (heightDocument - heightFooter) - ($(window).scrollTop() + heightQuickInfo) > 0){
+                // $("#container .quick-info").stop().animate({"top": movePosition + "px"}, 500);
+                $("#container .quick-info").css({"top": movePosition});
+            }else {
+                if ((heightDocument - heightFooter) - ($(window).scrollTop() + heightQuickInfo) < 0) {
+                    //$("#container .quick-info").stop().animate({"top": heightDocument - heightFooter - heightQuickInfo - posQuickInfo + "px"}, 500);
+                    $("#container .quick-info").css({"top": heightDocument - heightFooter - heightQuickInfo - posQuickInfo});
+                    return;
+                }
+                //$("#container .quick-info").stop().animate({"top": 0 + "px"}, 500);
+                $("#container .quick-info").css({"top": 0});
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="detail">
+        <div class="logo"><a href="http://web.co-star.kr/00_index/index.html"><img src="./assets/images/logo-costar.png" alt="로고-코스타"></a></div>
+        <div id="gnb" class="gnb">
+            <ul>
+                <li><a href="#">코스타</a></li>
+                <li><a href="#">코워킹스페이스</a></li>
+                <li><a href="#">공간대여</a></li>
+                <li><a href="./index.html">프로그램</a></li>
+                <li><a href="#">뉴스피드</a></li>
+            </ul>
+        </div>
+        <div class="ico-menu"><a href="#"><img src="./assets/images/icon_hamberger.png" alt="메뉴버튼"></a></div>
+    </header>
+    <section id="container">
+        <div class="p-header">
+            <div class="p-title-bar">
+                <div class="p-title">코스타 첫번째 네트워크파티</div>
+                <div class="p-icon-bar">
+                    <ul>
+                        <li><a href="#"><img src="./assets/images/icon-content-heart.png" alt="좋아요"></a></li>
+                        <li><a href="#"><img src="./assets/images/icon-content-share.png" alt="공유하기"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="p-content-1">
+                <div class="p-main-img">
+                    <img src="./assets/images/img-content-main.png" alt="컨텐츠 메인이미지">
+                    <span class="p-type">친목</span>
+                    <span class="p-status">모집중</span>
+                </div>
+            </div>
+            <div class="p-content-2">
+                <div class="p-sub-title">프로그램 소개</div>
+                <div class="line"></div>
+                <div class="p-main-text">
+                    <p>안녕하세요 디자이너들이 직접 공간을 꾸미고 운영하는</p>
+                    <p>감각있는 문화복합공간 로우파이스튜디오 입니다 !</p>
+                    <p>무드넘치는 컨셉의 각자 다른 3개의 룸으로 나눠진 80평규모의 공간에서</p>
+                    <p>촬영,파티,모임,클래스,전시 등의 다양한 목적의 공간으로 이용 가능합니다.</p>
+                    <p>현재 사진으로 오픈되어 있는 룸은 a, b 2개 룸이며, (c룸-준비중)</p>
+                    <p>각 룸 당 4명(a,b룸 전체대관-8명)기준으로,</p>
+                    <p>추가 인원이 발생할 경우, 추가금액(1인당5000원)은 현장결제로 진행됩니다.</p>
+                    <p>남산이 가까운 지형 특성상 지하로 들어오지만</p>
+                    <p>안에서는 용산고가 훤히 보이는 싱그러운 뷰의 1-2층 공간 입니다.</p>
+                    <p>기본적으로 매거진, 뮤비 등의 촬영이 많은 곳으로</p>
+                    <p>탈의실,스팀다리미, 포멕스 조명이 구비되어 있어 셀프촬영도 가능하시며,</p>
+                    <p>테이블과 의자 등은 인원수에 맞게 준비하여 드립니다.</p>
+                    <p>모임과 파티에 필요한 케이터링과 테이블세팅, 컨셉에 맞는 공간스타일링 등이 </p>
+                    <p>필요하신 분은 예약 후 따로 협의 가능하십니다.</p>
+                </div>
+                <img src="./assets/images/img-content-detail1.png" alt="컨텐츠 상세이미지">
+            </div>
+            <div class="p-content-3">
+                <div class="p-sub-title">참여 멤버</div>
+                <div class="line"></div>
+                <div class="p-members">
+                    <ul>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-2.jpg" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-3.jpg" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                        <li>
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <p class="text-name">박성민</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-content-4">
+                <div class="p-sub-title">주최자</div>
+                <div class="line"></div>
+                <div class="p-hostcard">
+                    <div class="p-hostcard-box">
+                        <div class="h-profile-intro">
+                            <img class="p-members-profile" src="./assets/images/img-members-1.png" alt="프로필사진">
+                            <div class="h-content">
+                                <p class="h-title">
+                                    <img src="./assets/images/icon-member-level.png" alt="">
+                                    <span>날다람지</span>
+                                    <a href="#"><img src="./assets/images/icon-message.png" alt="쪽지보내기"></a>
+                                </p>
+                                <div class="h-introduce">
+                                    <p>안녕하세요. 저는 코스타 대표 날다람지 입니다.</p>
+                                    <p>만나서 반갑습니다. 베러투게더!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-tags">
+                            <ul>
+                                <li>관심태그</li>
+                                <li class="active">#네트워크</li>
+                                <li>#파티</li>
+                                <li class="active">#강연세미나</li>
+                                <li>#Better_together</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quick-info">
+            <ul>
+                <li><p>날짜</p><span>2018년 08월 31일</span></li>
+                <li><p>시간</p><span>2018년 08월 31일</span></li>
+                <li><p>장소</p><span>2018년 08월 31일</span></li>
+                <li><p>신청기간</p><span>2018년 08월 31일</span></li>
+                <li><p>참여가능 인원</p><span class="txt_red">9</span><span>/20 모집중</span></li>
+                <li><p>참가비용</p><span>1만원</span></li>
+                <li><p>태그</p><span>#네크워크 #파티 #강연세미나</span></li>
+                <li><a class="btn-apply" href="#">신청하기</a></li>
+                <li><a class="btn-favorite" href="#"><img src="./assets/images/icon-heart-chk.png" alt="heart"> 앵콜<span class="cnt">3</span></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-bar">
+                <div class="footer-logo">
+                    <img src="./assets/images/logo-costar-footer.png" alt="footer 로고">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">회사소개</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">이용약관</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">개인정보처리방침</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">운영정책</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">고객문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <div class="f-info-1">
+                    <ul>
+                        <li>상호명:코스타</li><span class="f-gubun">|</span>
+                        <li>대표:김세희</li><span class="f-gubun">|</span>
+                        <li>사업자등록증:000-00-000000</li><span class="f-gubun">|</span>
+                        <li>통신판매업신고번호: 0000-서울혜화-0000</li><span class="f-gubun">|</span>
+                        <li><a href="#">사업자등록정보 ></a></li>
+                    </ul>
+                </div>
+                <div class="f-info-2">
+                    <ul>
+                        <li>영업소재지:서울시 종로구 혜화동 1층</li><span class="f-gubun">|</span>
+                        <li>이메일: costar2018@naver.com</li>
+                    </ul>
+                </div>
+                <div class="f-info-3">
+                    <ul>
+                        <li>대표전화: 1599-4312 (평일 오전 10시 ~ 오후 6시)</li>
+                    </ul>
+                </div>
+                <div class="f-info-4">
+                    Copyright Co-star Corp. All Rights Reserced.
+                </div>
+                <div class="link_btn">
+                    <a href="https://blog.naver.com/costar2018" target="_blank"><img src="./assets/images/link-blog.gif" alt="네이버블로그"></a>
+                    <a href="https://www.instagram.com/costar2018" target="_blank"><img src="./assets/images/link-insta.gif" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/costar2018" target="_blank"><img src="./assets/images/link-facebook.gif" alt="페이스북"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ### JS Body after Complete Dom ### -->  
+</body>
+</html>

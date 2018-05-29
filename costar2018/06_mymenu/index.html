@@ -32,15 +32,24 @@
     <meta name="theme-color" content="#ffffff">
     <!-- ### CSS ### -->
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/layout.css?v1">
     <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/mymenu.css">
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
     <!-- ### JS ### -->
     <script src="./assets/js/jquery-1.8.3.min.js"></script>
     <!-- Swiper JS -->
     <script src="./assets/js/swiper.min.js"></script>
     <script>
-        
+        function showMyMenu(){
+            $('#myMenuList').show();
+        }
+
+        function hideMyMenu(){
+            $('#myMenuList .my-menu').scrollTop(0);
+            $('#myMenuList').hide();
+        }
+
     </script>
 </head>
 <body>
@@ -55,7 +64,7 @@
                 <li><a href="#">뉴스피드</a></li>
             </ul>
         </div>
-        <div class="ico-menu"><a href="#"><img src="./assets/images/icon_hamberger.png" alt="메뉴버튼"></a></div>
+        <div class="ico-menu"><a href="javascript:showMyMenu();"><img src="./assets/images/icon_hamberger.png" alt="메뉴버튼"></a></div>
     </header>
     <section id="main-banner">
         <div class="banner-content">
@@ -306,6 +315,63 @@
             </div>
         </div>
     </section>
+    <div id="myMenuList" class="myMenuList" style="display: none;">
+        <div class="blind_box">&nbsp;</div>
+        <div class="my-menu">
+            <div class="my-info">
+                <ul>
+                    <li><a href="#"><img class="my-profile-img" src="./assets/images/img-members-1.png" alt="프로필사진"></a></li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icon-member-level.png" alt="">
+                            <span>날다람지</span>님
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icon-coin.png" alt="마일리지">
+                            <span class="coin-txt">마일리지</span>
+                            <span class="coin-txt-int">20,100</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/icon-message.png" alt="쪽지">
+                            <span class="message-txt">쪽지</span>
+                            <span class="message-txt-int">3</span>
+                            <span class="icon-new-pink">&nbsp;&nbsp;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-menu-list">
+                <ul>
+                    <li><div class="link"><a href="#">코스타 홈으로 가기</a></div></li>
+                    <li><div class="link"><a href="#">코스타 멤버쉽</a></div></li>
+                    <li><div class="link"><a href="#">1F 대관<span class="icon-new-pink">&nbsp;&nbsp;</span></a></div></li>
+                    <li><div class="link"><a href="#">2F 코워킹스페이스</a></div>
+                        <div class="my-menu-sub-list">
+                            <ul>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="#">내가 참여한 프로그램</a></li>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="#">MY 프로그램 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="open">
+                        <div class="link"><a href="javascript:clickMyMenu();">프로그램</a></div>
+                        <div class="my-menu-sub-list">
+                            <ul>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="#">내가 참여한 프로그램</a></li>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="#">MY 프로그램 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><div class="link"><a href="#">회원정보수정</a></div></li>
+                    <li><div class="link"><a href="#">로그아웃</a></div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-top">
             <div class="footer-bar">
@@ -364,6 +430,31 @@
             el: '.swiper-pagination',
             },
         });
+
+        $("#myMenuList .blind_box").click(function(e) { 
+            hideMyMenu();
+        });
+
+        $(".my-menu-list .link").click(function(e) {
+            var $AllList = $(".my-menu-list").find('.open');
+            var $li = $(this).parent();
+
+            if($AllList.index() == $li.index()) {
+                $AllList.removeClass('open');
+                $(this).siblings('.my-menu-sub-list').slideUp();
+            } else if ($AllList.index() != $li.parent().index() && $AllList.length > 0){
+                $AllList.removeClass('open');
+                $AllList.find('.my-menu-sub-list').slideUp();
+                
+                $(this).siblings('.my-menu-sub-list').slideDown(function(){
+                    $li.addClass('open');
+                });
+            } else {
+                $li.addClass('open');
+                $(this).siblings('.my-menu-sub-list').slideDown();
+            }
+        });
+
     </script>
 </body>
 </html>
