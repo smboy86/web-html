@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* ###################### global font style ###################### */
+span.txt_red {
+    color:red;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+span.f-gubun {
+    font-size: 14px;
+    color: #cccccc;
+    padding-left: 10px;
+    padding-right: 5px;
+}
