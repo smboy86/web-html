@@ -1,0 +1,211 @@
+.myMenuList {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 300;
+}
+
+.myMenuList .blind_box {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+}
+
+.myMenuList .my-menu {
+    width: 362px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    z-index: 100;
+    background: #e6e6e6;
+    overflow-y: scroll;
+}
+
+.myMenuList .my-menu::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.myMenuList .my-menu .my-info {
+    width:100%;
+    height: 380px;
+    background: #694ec2;
+    text-align: center;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(1){
+    padding-top: 35px;
+}
+
+.myMenuList .my-menu .my-info .my-profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(2){
+    margin-top: 27px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(2) a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(2) span {
+    font-weight: 600;
+    margin: 0 6px;
+}
+
+
+.myMenuList .my-menu .my-info ul li:nth-child(3) {
+    height: 34px;
+    line-height: 34px;
+    margin-top: 44px;
+    padding-left: 75px;
+    text-align: left;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(3) img {
+    vertical-align: middle;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(3) a .coin-txt{
+    margin-left: 16px;
+    margin-right: 8px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #afa3d1;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(3) .coin-txt-int {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(4) {
+    margin-top: 30px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 75px;
+    text-align: left;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(4) a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #afa3d1;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(4) a .message-txt{
+    margin-left: 16px;
+    margin-right: 8px;
+    line-height: 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #afa3d1;
+}
+
+.myMenuList .my-menu .my-info ul li:nth-child(4) .message-txt-int {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+/* 공통 */
+.myMenuList .icon-new-pink {
+    background: url(../images/icon-new-message.png) no-repeat;
+    background-position: right top; 
+}
+
+.myMenuList .my-menu .my-menu-list {
+    position: static;
+    background: #f6f6f6;
+}
+
+
+.myMenuList .my-menu .my-menu-list .link {
+    display:inline;
+    padding: 10px 35px 15px 30px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.myMenuList .my-menu .my-menu-list a {
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.myMenuList .my-menu .my-menu-list ul {
+    margin-top: 15px;
+    background: white;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.myMenuList .my-menu .my-menu-list ul li {
+    line-height: 60px;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+.myMenuList .my-menu .my-menu-list ul li span {
+    padding-left: 4px;
+}
+
+.myMenuList .my-menu .my-menu-list .my-menu-sub-list {
+    display: none;
+}
+
+.myMenuList .my-menu .my-menu-list ul li:nth-child(5) .my-menu-sub-list {
+    display: block;
+}
+
+.myMenuList .my-menu .my-menu-list .my-menu-sub-list ul {
+    background: #f6f6f6;
+    margin-top: 0;
+}
+
+.myMenuList .my-menu .my-menu-list .my-menu-sub-list ul li{
+    padding-left: 30px;
+    height: 52px;
+    line-height: 52px;
+}
+
+
+
+.myMenuList .my-menu .my-menu-list .my-menu-sub-list a {
+    /* padding: 10px 0;
+    padding-right: 15px; */
+    padding-left: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.myMenuList .my-menu .my-menu-list .my-menu-sub-list .icon-menu-gray {
+    margin-right: 5px;
+    background: url(../images/icon-menu-gray.png) no-repeat;
+    background-position: center; 
+}
