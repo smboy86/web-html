@@ -1,8 +1,8 @@
 /* layout */
-section.coworking {width:1140px;min-height:850px;margin:0 auto;}
+section.myspace {width:1140px;min-height:850px;margin:0 auto;}
 
 /* style */
-.coworking .co-status-dropbox {
+.myspace .myspace-dropbox {
     width: 160px;
     height: 46px;
     float: right;
@@ -11,7 +11,7 @@ section.coworking {width:1140px;min-height:850px;margin:0 auto;}
     overflow: hidden;
 }
 
-table.coworking-table {
+table.myspace-table {
     width: 100%;
     margin-top: 137px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -22,7 +22,7 @@ table.coworking-table {
     border-collapse: collapse;
 }
 
-.coworking-table th {
+.myspace-table th {
     height: 80px;
     background: #f2f2f2;
     font-size: 18px;
@@ -30,22 +30,22 @@ table.coworking-table {
     border-top : 1px solid #694ec2;
 }
 
-.coworking-table td {
+.myspace-table td {
     border-top : 1px solid #dddddd;
     border-bottom : 1px solid #dddddd;
 }
 
-.coworking-table tr {
+.myspace-table tr {
     height: 75px;
 }
 
-.coworking-table tr td a {
+.myspace-table tr td a {
     text-decoration: none;
     position: relative;
     color: black;
 }
 
-.coworking-table tr td a:after {
+.myspace-table tr td a:after {
     content: '';
     width: 100%;
     position: absolute;
@@ -55,7 +55,7 @@ table.coworking-table {
     border-style: solid;
 }
 
-.coworking-table tr td a:visited {
+.myspace-table tr td a:visited {
     color: #694ec2;
 }
 
