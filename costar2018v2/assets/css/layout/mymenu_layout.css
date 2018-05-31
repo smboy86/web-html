@@ -1,0 +1,75 @@
+/* layout */
+section.coworking {width:1140px;min-height:850px;margin:0 auto;}
+
+/* style */
+.coworking .co-status-dropbox {
+    width: 160px;
+    height: 46px;
+    float: right;
+    margin-top: 60px;
+    border:1px solid #e5e5e5;
+    overflow: hidden;
+}
+
+table.coworking-table {
+    width: 100%;
+    margin-top: 137px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.coworking-table th {
+    height: 80px;
+    background: #f2f2f2;
+    font-size: 18px;
+    font-weight: 700;
+    border-top : 1px solid #694ec2;
+}
+
+.coworking-table td {
+    border-top : 1px solid #dddddd;
+    border-bottom : 1px solid #dddddd;
+}
+
+.coworking-table tr {
+    height: 75px;
+}
+
+.coworking-table tr td a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.coworking-table tr td a:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+.coworking-table tr td a:visited {
+    color: #694ec2;
+}
+
+
+/* table text style */
+
+
+
+
+
+
+
+/*  줄별 색상 넣기
+tr:nth-child(odd) {
+    background-color: #dddddd;
+} 
+*/

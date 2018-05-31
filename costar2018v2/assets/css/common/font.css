@@ -1,9 +1,19 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /* ###################### global font style ###################### */
-span.txt_red {
+span.txt-red {
+    font-weight: 700;
     color:red;
-    font-weight: bold;
+}
+
+span.txt-pink {
+    font-weight: 700;
+    color:#ff7081;
+}
+
+span.txt-sky {
+    font-weight: 700;
+    color: #5b80c9;
 }
 
 h3 {
