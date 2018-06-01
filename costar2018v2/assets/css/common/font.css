@@ -1,6 +1,12 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /* ###################### global font style ###################### */
+/* weight */
+span.txt-bold {
+    font-weight: 700;
+}
+
+/* color */
 span.txt-red {
     font-weight: 700;
     color:red;
@@ -22,6 +28,8 @@ h3 {
     font-weight: 600;
     color: black;
 }
+
+/*  etc  */
 
 span.f-gubun {
     font-size: 14px;
