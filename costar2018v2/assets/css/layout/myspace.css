@@ -59,7 +59,120 @@ table.myspace-table {
     color: #694ec2;
 }
 
-/* ############### myinfo table style ################# */
+/* ############### myprofile layout style ################# */
+.myspace-detail-gray {
+    background: #ebebeb;
+}
+
+table.myspace-myprofile-table {
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.myspace-myprofile-table colgroup col {
+    border: 1px solid #e5e5e5;
+}
+
+table.myspace-myprofile-table colgroup col:nth-child(1) { /* col width */
+    width: 23%;
+    background: #fafafa;
+}
+
+table.myspace-myprofile-table colgroup col:nth-child(1) span.type {
+    display:table-cell;vertical-align:middle;
+}
+
+table.myspace-myprofile-table colgroup col:nth-child(2) {
+    background: #ffffff;
+}
+
+.myspace-myprofile-table tbody tr td {
+    padding-top: 30px;
+    padding-left: 62px;
+}
+
+.myspace-myprofile-table tbody tr:nth-child(1) {
+    height: 185px;
+    vertical-align: top;
+    border-top : 4px solid #694ec2;
+}
+
+.myspace-myprofile-table tbody tr:nth-child(2) td {
+    height: 111px;
+    padding-top: 0;
+}
+
+.myspace-myprofile-table tr td {
+    border-top : 1px solid #dddddd;
+}
+
+.submit-box {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.submit-box  button {
+    margin:0 20px;
+}
+
+/* in table style */
+.myspace button.btns {
+    width: 150px;
+    height: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.myspace-myprofile-table span.type {
+    font-weight: 700;
+    vertical-align: top;
+}
+
+table.myspace-myprofile-table .myprofile {
+    display: inline-block;
+}
+
+table.myspace-myprofile-table .myprofile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.myspace-myprofile-table .btn-box {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: bottom;
+}
+
+.myspace-myprofile-table input {
+    width: 620px;
+    height: 50px;
+    padding-left: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+}
+
+
+
+
+
+/*  줄별 색상 넣기
+tr:nth-child(odd) {
+    background-color: #dddddd;
+} 
+*/
+
+
+/* ############### layout myinfo ################# */
 table.myspace-myinfo-table {
     width: 100%;
     margin-top: 100px;
@@ -93,7 +206,7 @@ table.myspace-myinfo-table col:nth-child(1) img {
     height: 80px;
     font-size: 18px;
     font-weight: 700;
-    border-top : 1px solid #694ec2;
+    border-top : 2px solid #694ec2;
 }
 
 .myspace-myinfo-table tbody tr:nth-child(1) {
@@ -169,10 +282,3 @@ table.myspace-myinfo-table col:nth-child(1) img {
     color: #cccccc;
     text-align: center;
 }
-
-
-/*  줄별 색상 넣기
-tr:nth-child(odd) {
-    background-color: #dddddd;
-} 
-*/

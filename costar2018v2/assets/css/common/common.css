@@ -11,7 +11,7 @@ a {
 }
 */
 
-header {width:100%;margin-bottom:2px;}
+header {width:100%;height:85px;margin-bottom:2px;}
 header.detail {border-bottom:1px solid #e5e5e5;} /* header 밑줄 */
 header.mymenu_layout {background: #694ec2}
 footer {width:100%;height:330px;margin:0 auto;}
@@ -178,4 +178,38 @@ footer .footer-bottom .footer-info .link_btn a {
 
 footer .footer-bottom .footer-info .link_btn a:last-child {
     margin-right:0;
+}
+
+/* ##########################  Shapes  ########################*/
+/* ########  buttons  ########*/
+button.btn-black-white {
+    border-radius: 40px;
+    background: #000000;
+    color: #ffffff;
+}
+
+button.btn-black2-white {
+    border-radius: 40px;
+    background: #333333;
+    color: #ffffff;
+}
+
+button.btn-white-gray {
+    border:1px solid #999999;
+    border-radius: 40px;
+    background: #ffffff;
+    color: #b8b8b8;
+}
+
+button.btn-purple-white {
+    border-radius: 40px;
+    background: #694ec2;
+    color: #ffffff;
+}
+
+button.btn-white-purple {
+    border:1px solid #694ec2;
+    border-radius: 40px;
+    background: #ffffff;
+    color: #694ec2;
 }
