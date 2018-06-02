@@ -53,13 +53,13 @@
     <header class="mymenu_layout">
         <div class="logo"><a href="./00_index.html"><img src="./assets/images/common/logo-costar-white.png" alt="로고-코스타"></a></div>
         <div class="mymenu-display-title">
-            <span>프로필 사진 수정</span>
+            <span>기본 정보 수정</span>
         </div>
         <div class="ico-menu"><a href="javascript:showMyMenu();"><img src="./assets/images/common/icon-hamberger-white.png" alt="메뉴버튼"></a></div>
     </header>
     <section class="myspace">
-        <table class="myspace-myprofile-table">
-            <!-- <caption>프로필 사진 수정</caption> -->
+        <table class="myspace-infodetail-table">
+            <!-- <caption>기본 정보 수정</caption> -->
             <colgroup>
                 <col />
                 <col />
@@ -67,22 +67,89 @@
             <tbody>
                 <tr>
                     <td>
-                        <span class="type">프로필 사진</span>
+                        <span class="type">이름</span>
                     </td>
                     <td>
-                        <div class="myprofile">
-                            <img class="my-profile-img" src="./assets/images/mymenu/img-members-1.png" alt="프로필사진">
-                        </div>
-                        <div class="btn-box">
-                            <button class="btns btn-black2-white">사진변경</a>
-                            <button class="btns btn-white-gray">삭제</a>
-                        </div>
+                        최희연
                     </td>
+                </tr>
                 <tr>
-                    <td><span class="type">닉네임</span></td>
                     <td>
-                        <input type="text" placeholder="날다람지" value="날다람지">
-                        <button class="btns btn-black2-white">중복확인</a>
+                        <span class="type">이메일</span>
+                    </td>
+                    <td>
+                        mibbmm@naver.com
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="type">생년월일</span>
+                    </td>
+                    <td>
+                        <select class="birth">
+                            <option selected>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                        </select>
+                        <select class="birth">
+                            <option selected>12</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                        </select>
+                        <select class="birth">
+                            <option selected>03</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="type">휴대폰 번호</span>
+                    </td>
+                    <td>
+                        <select class="tel-t">
+                            <option selected>SKT</option>
+                            <option>SKT</option>
+                            <option>KT</option>
+                            <option>LG</option>
+                        </select>
+                        <input class="phone" type="text" value="010">
+                        -
+                        <input class="phone" type="text" value="1234">
+                        -
+                        <input class="phone" type="text" value="0816">
+                        <button class="btns btn-black2-white">인증하기</button>
+                        <p class="tel-text">* 본인 인증된 휴대폰 번호입니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="type">주소</span></td>
+                    <td>
+                        <input class="zip" type="text" placeholder="우편 번호 찾기 해주세요." value=""><button class="btns btn-black2-white">우편번호 찾기</button>
+                        <input class="address" type="text" placeholder="상세한 주소를 입력해주세요." value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="type">개인정보 수신<br>마케팅 활용 동의</span></td>
+                    <td>
+                        <ul>
+                            <li>* 수신 및 마케팅 활용에 동의하지 않아도 해피포인트 적립/사용, 회원정보수정은 하실 수 있습니다.</li>
+                            <li>* 선택항목에 미동의 하셔도 회원정보수정은 하실 수 있습니다.</li>
+                            <li>* 수신 및 마케팅 활용동의 시</li>
+                            <li>해피포인트카드 및 해피포인트 제휴사 및 제휴가맹점 등 에스피씨 클라우드가 취급하는 상품/서비스/이벤트/문화공연 등에 대한 안내,</li>
+                            <li>생일쿠폰 등 다양한 할인쿠폰 등을 받아보실 수 있습니다.</li>
+                            <li>(단, 거래정보 결제/교환/환불안내, 약관 및 서비스 관리 정책변경, VOC 등과 관련된 내용은 수신동의 여부와 관계없이 발송됩니다.)</li>
+                        </ul>
+                        <div class="myspace-radios">
+                            <input type="radio" id="r3" name="rrr" />
+                            <label for="r3"><span></span>동의</label>
+                            <input type="radio" id="r4" name="rrr" />
+                            <label for="r4"><span></span>동의안함</label>
+                        </div>
                     </td>
                 </tr>
             </tbody>

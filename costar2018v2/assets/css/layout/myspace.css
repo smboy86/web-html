@@ -1,6 +1,11 @@
 /* layout */
 section.myspace {width:1140px;min-height:850px;margin:0 auto;}
 
+.myspace-detail-gray {
+    background: #ebebeb;
+}
+
+/* ############### myspace layout style ################# */
 /* style */
 .myspace .myspace-dropbox {
     width: 160px;
@@ -59,120 +64,8 @@ table.myspace-table {
     color: #694ec2;
 }
 
-/* ############### myprofile layout style ################# */
-.myspace-detail-gray {
-    background: #ebebeb;
-}
 
-table.myspace-myprofile-table {
-    width: 100%;
-    margin-top: 100px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;
-    text-align: left;
-    border-collapse: collapse;
-}
-
-table.myspace-myprofile-table colgroup col {
-    border: 1px solid #e5e5e5;
-}
-
-table.myspace-myprofile-table colgroup col:nth-child(1) { /* col width */
-    width: 23%;
-    background: #fafafa;
-}
-
-table.myspace-myprofile-table colgroup col:nth-child(1) span.type {
-    display:table-cell;vertical-align:middle;
-}
-
-table.myspace-myprofile-table colgroup col:nth-child(2) {
-    background: #ffffff;
-}
-
-.myspace-myprofile-table tbody tr td {
-    padding-top: 30px;
-    padding-left: 62px;
-}
-
-.myspace-myprofile-table tbody tr:nth-child(1) {
-    height: 185px;
-    vertical-align: top;
-    border-top : 4px solid #694ec2;
-}
-
-.myspace-myprofile-table tbody tr:nth-child(2) td {
-    height: 111px;
-    padding-top: 0;
-}
-
-.myspace-myprofile-table tr td {
-    border-top : 1px solid #dddddd;
-}
-
-.submit-box {
-    margin-top: 80px;
-    text-align: center;
-}
-
-.submit-box  button {
-    margin:0 20px;
-}
-
-/* in table style */
-.myspace button.btns {
-    width: 150px;
-    height: 50px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.myspace-myprofile-table span.type {
-    font-weight: 700;
-    vertical-align: top;
-}
-
-table.myspace-myprofile-table .myprofile {
-    display: inline-block;
-}
-
-table.myspace-myprofile-table .myprofile img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.myspace-myprofile-table .btn-box {
-    display: inline-block;
-    padding-left: 20px;
-    vertical-align: bottom;
-}
-
-.myspace-myprofile-table input {
-    width: 620px;
-    height: 50px;
-    padding-left: 20px;
-    margin-right: 20px;
-    vertical-align: middle;
-    border: 1px solid #cccccc;
-}
-
-
-
-
-
-/*  줄별 색상 넣기
-tr:nth-child(odd) {
-    background-color: #dddddd;
-} 
-*/
-
-
-/* ############### layout myinfo ################# */
+/* ############### myspace-index layout style ################# */
 table.myspace-myinfo-table {
     width: 100%;
     margin-top: 100px;
@@ -281,4 +174,234 @@ table.myspace-myinfo-table col:nth-child(1) img {
     padding-top: 90px;
     color: #cccccc;
     text-align: center;
+}
+
+/* ############### myspace-profile layout style ################# */
+table.myspace-myprofile-table {
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.myspace-myprofile-table colgroup col {
+    border: 1px solid #e5e5e5;
+}
+
+table.myspace-myprofile-table colgroup col:nth-child(1) { /* col width */
+    width: 23%;
+    background: #fafafa;
+}
+
+table.myspace-myprofile-table colgroup col:nth-child(1) span.type {
+    display:table-cell;vertical-align:middle;
+}
+
+table.myspace-myprofile-table colgroup col:nth-child(2) {
+    background: #ffffff;
+}
+
+.myspace-myprofile-table tbody tr td {
+    padding-top: 30px;
+    padding-left: 62px;
+}
+
+.myspace-myprofile-table tbody tr:nth-child(1) {
+    height: 185px;
+    vertical-align: top;
+    border-top : 4px solid #694ec2;
+}
+
+.myspace-myprofile-table tbody tr:nth-child(2) td {
+    height: 111px;
+    padding-top: 0;
+}
+
+.myspace-myprofile-table tr td {
+    border-top : 1px solid #dddddd;
+}
+
+.submit-box {
+    height: 222px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.submit-box  button {
+    margin:0 20px;
+}
+
+/* in table style */
+.myspace button.btns {
+    width: 150px;
+    height: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.myspace-myprofile-table span.type {
+    font-weight: 700;
+    vertical-align: top;
+}
+
+table.myspace-myprofile-table .myprofile {
+    display: inline-block;
+}
+
+table.myspace-myprofile-table .myprofile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.myspace-myprofile-table .btn-box {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: bottom;
+}
+
+.myspace-myprofile-table input {
+    width: 620px;
+    height: 50px;
+    padding-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #cccccc;
+}
+
+/* ############### myspace-info layout style ################# */
+table.myspace-infodetail-table {
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.myspace-infodetail-table tobdy {
+    border : 1px solid #dddddd;
+}
+
+.myspace-infodetail-table tr td {
+    padding-left: 60px;
+}
+
+.myspace-infodetail-table td {
+    border-top : 1px solid #e5e5e5;
+}
+
+.myspace-infodetail-table colgroup col:nth-child(1) {
+    width: 260px;
+    background: #fafafa;
+}
+
+.myspace-infodetail-table colgroup col:nth-child(2) {
+    background: #ffffff;
+}
+
+.myspace-infodetail-table tbody tr:nth-child(1) {
+    height: 75px;
+    border-top : 4px solid #694ec2;
+}
+
+.myspace-infodetail-table tbody tr:nth-child(2) {
+    height: 78px;
+}
+
+.myspace-infodetail-table tbody tr:nth-child(3) {
+    height: 111px;
+}
+
+.myspace-infodetail-table tbody tr:nth-child(4) {
+    height: 140px;
+}
+
+.myspace-infodetail-table tbody tr:nth-child(5) {
+    height: 170px;
+}
+
+.myspace-infodetail-table tbody tr:nth-child(6) {
+    height: 290px;
+    vertical-align: top;
+}
+
+.myspace-infodetail-table tbody tr:nth-child(6) td {
+    padding-top: 30px;
+}
+
+/* inner style */
+.myspace-infodetail-table span.type {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.myspace-infodetail-table .btn {
+    width: 160px;
+    height: 50px;
+    padding: 14px 24px;
+    border:2px solid #000000;
+    border-radius: 40px;
+    color: #000000;
+}
+
+.myspace-infodetail-table select.birth {
+    width: 150px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 15px;
+}
+
+.myspace-infodetail-table select.tel-t {
+    width: 150px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 15px;
+}
+
+.myspace-infodetail-table input.phone {
+    width: 100px;
+    height: 50px;
+    padding-left: 16px;
+    margin: 0 5px;
+}
+
+.myspace-infodetail-table input.zip {
+    width: 560px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 16px;
+}
+
+.myspace-infodetail-table input.address {
+    width: 731px;
+    height: 50px;
+    padding-left: 16px;
+    margin-top: 11px;
+}
+
+.myspace-infodetail-table input.phone:nth-child(4) {
+    margin-right: 20px;
+}
+
+.myspace-infodetail-table p.tel-text {
+    margin-top: 10px;
+    color: #ff7081;
+}
+
+.myspace-infodetail-table ul li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.myspace-infodetail-table .myspace-radios {
+    margin-top: 24px;
 }

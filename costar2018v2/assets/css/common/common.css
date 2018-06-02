@@ -180,6 +180,32 @@ footer .footer-bottom .footer-info .link_btn a:last-child {
     margin-right:0;
 }
 
+/* ##########################  Inputs  ########################*/
+input {
+    width: 100px;
+    padding: .4em .5em;
+    font-family: inherit;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+}
+
+select {
+    width: 100px;
+    padding: .4em .5em;
+    font-family: inherit;
+    background: url(../../images/common/input-arrow-down.png) no-repeat 95% 50%;  
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+}
+  
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
 /* ##########################  Shapes  ########################*/
 /* ########  buttons  ########*/
 button.btn-black-white {
