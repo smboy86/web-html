@@ -406,7 +406,7 @@ table.myspace-infodetail-table {
     margin-top: 24px;
 }
 
-/* ############### myspace-info layout style ################# */
+/* ############### myspace-certify layout style ################# */
 table.myspace-certify-table {
     width: 100%;
     margin-top: 100px;
@@ -474,4 +474,103 @@ table.myspace-certify-table {
     margin-right: 16px;
     border-radius: 3px;
     color: #ffffff;
+}
+
+
+/* ############### myspace-addinfo layout style ################# */
+table.myspace-addinfo-table {
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.myspace-addinfo-table tbody {
+    border : 1px solid #dddddd;
+}
+
+.myspace-addinfo-table tbody tr {
+    border : 1px solid #dddddd;
+}
+
+.myspace-addinfo-table tr td {
+    padding-left: 60px;
+}
+
+.myspace-addinfo-table colgroup col:nth-child(1) {
+    width: 260px;
+    background: #fafafa;
+}
+
+.myspace-addinfo-table colgroup col:nth-child(2) {
+    background: #ffffff;
+}
+
+.myspace-addinfo-table tbody tr:nth-child(1) {
+    height: 374px;
+    border-top : 4px solid #694ec2;
+}
+
+.myspace-addinfo-table tbody tr:nth-child(1) td {
+    padding-top: 30px;
+    vertical-align: top;
+}
+
+.myspace-addinfo-table tbody tr:nth-child(2) {
+    height: 210px;
+}
+
+.myspace-addinfo-table tbody tr:nth-child(2) td {
+    padding-top: 30px;
+    vertical-align: top;
+}
+
+/* inner style */
+.myspace-addinfo-table span.type {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.myspace-addinfo-table p.txt-sub {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #999999;
+}
+
+.myspace-addinfo-table textarea {
+    width: 760px;
+    height: 150px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.myspace-addinfo-table ul li {
+    height: 66px;
+}
+
+.myspace-addinfo-table ul li input[type="checkbox"]+label {
+    display:inline-block;
+    width: 148px;
+}
+
+.myspace-addinfo-table ul li .selected-checkbox {
+    width: 790px;
+    height: 50px;
+    padding: 12px 0 0 15px;
+    border: 1px solid #cccccc;
+}
+.myspace-addinfo-table ul li .selected-checkbox span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin: 0 16px 0 8px;
+    vertical-align:middle;
+    background:url(../../images/common/input-checkbox-delete.png) no-repeat;
+    cursor: pointer;
 }
