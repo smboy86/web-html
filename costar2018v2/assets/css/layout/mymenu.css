@@ -132,7 +132,7 @@
 
 /* 공통 */
 .myMenuList .icon-new-pink {
-    background: url(../images/icon-new-message.png) no-repeat;
+    background: url(../../images/mymenu/icon-new-message.png) no-repeat;
     background-position: right top; 
 }
 

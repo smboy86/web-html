@@ -180,7 +180,55 @@ footer .footer-bottom .footer-info .link_btn a:last-child {
     margin-right:0;
 }
 
-/* ##########################  Inputs  ########################*/
+/* ##########################  paging  ######################## */
+.msg_sound_only, .sound_only {
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0;
+    line-height: 0;
+    border: 0 !important;
+    overflow: hidden !important;
+}
+
+.pager-box {
+    width: 100%;
+    margin: 80px 0 150px 0;
+}
+
+.pager-box .pg {
+
+}
+.pager-box .pg .pg_wrap {
+    height: 30px;
+    text-align: center;
+}
+
+.pager-box .pg .pg_wrap a, span {
+    vertical-align: middle;
+}
+
+.pager-box .pg .pg_wrap a {
+    padding: 4px 10px;
+}
+
+.pager-box .pg .pg_wrap a.current {
+    background: url(../../images/pager/icon-pager-current.png) no-repeat;
+    color: white;
+}
+
+.pager-box .pg .pg_wrap a img {
+    padding-top: 10px;
+}
+
+.pager-box .pg .pg_wrap .pg_page {
+    margin: 0 8px;
+}
+
+/* ##########################  Inputs  ######################## */
 input[type="text"] {
     width: 100px;
     padding: .4em .5em;

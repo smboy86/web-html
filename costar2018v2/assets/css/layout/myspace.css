@@ -574,3 +574,72 @@ table.myspace-addinfo-table {
     background:url(../../images/common/input-checkbox-delete.png) no-repeat;
     cursor: pointer;
 }
+
+/* ############### myspace-message layout style ################# */
+table.myspace-message-table {
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.myspace-message-table thead {
+    border-top : 4px solid #694ec2;
+    font-size: 18px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.myspace-message-table tbody {
+    border : 1px solid #dddddd;
+}
+
+.myspace-message-table tbody tr {
+    border : 1px solid #dddddd;
+}
+
+.myspace-message-table tr td {
+    text-align: center;
+}
+
+.myspace-message-table tr td:nth-child(2) {
+    padding-left: 16px;
+    text-align: left;
+}
+
+.myspace-message-table colgroup col:nth-child(1) {
+    width: 160px;
+}
+
+.myspace-message-table colgroup col:nth-child(2) {
+    width: 815px;
+    text-align: left;
+}
+    
+
+.myspace-message-table colgroup col:nth-child(3) {
+    width: 160px;
+}
+
+.myspace-message-table thead tr {
+    height: 80px;
+}
+
+.myspace-message-table tbody tr {
+    height: 77px;
+}
+
+/* inner style */
+.myspace-message-table tr.unread {
+    font-weight: 700;
+}
+
+.myspace-message-table span.unread {
+    background: url(../../images/mymenu/icon-new-message.png) no-repeat;
+    background-position: right top; 
+}
+
