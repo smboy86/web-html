@@ -476,6 +476,9 @@ table.myspace-certify-table {
     color: #ffffff;
 }
 
+.myspace-certify-table .btns {
+    margin: 0;
+}
 
 /* ############### myspace-addinfo layout style ################# */
 table.myspace-addinfo-table {
@@ -593,13 +596,14 @@ table.myspace-message-table {
     text-align: center;
     background: #f2f2f2;
 }
-
+/* 
 .myspace-message-table tbody {
     border : 1px solid #dddddd;
-}
+} */
 
 .myspace-message-table tbody tr {
-    border : 1px solid #dddddd;
+    border-top : 1px solid #dddddd;
+    border-bottom : 1px solid #dddddd;
 }
 
 .myspace-message-table tr td {
@@ -630,7 +634,7 @@ table.myspace-message-table {
 }
 
 .myspace-message-table tbody tr {
-    height: 77px;
+    height: 56px;
 }
 
 /* inner style */

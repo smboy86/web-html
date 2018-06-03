@@ -212,7 +212,7 @@ footer .footer-bottom .footer-info .link_btn a:last-child {
 }
 
 .pager-box .pg .pg_wrap a {
-    padding: 4px 10px;
+    padding: 5px 10px;
 }
 
 .pager-box .pg .pg_wrap a.current {
@@ -254,6 +254,10 @@ input[type="checkbox"] + label span {
 
 input[type="checkbox"]:checked + label span {
     background:url(../../images/common/input-checkbox-on.png) no-repeat;
+}
+
+input[type="file"] {
+    border: 1px solid #cccccc;
 }
 
 select {
