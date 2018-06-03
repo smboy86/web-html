@@ -286,7 +286,7 @@ table.myspace-infodetail-table {
     border-collapse: collapse;
 }
 
-.myspace-infodetail-table tobdy {
+.myspace-infodetail-table tbody {
     border : 1px solid #dddddd;
 }
 
@@ -404,4 +404,74 @@ table.myspace-infodetail-table {
 
 .myspace-infodetail-table .myspace-radios {
     margin-top: 24px;
+}
+
+/* ############### myspace-info layout style ################# */
+table.myspace-certify-table {
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.myspace-certify-table tbody {
+    border : 1px solid #dddddd;
+}
+
+.myspace-certify-table tr td {
+    padding-left: 60px;
+}
+
+.myspace-certify-table colgroup col:nth-child(1) {
+    width: 260px;
+    background: #fafafa;
+}
+
+.myspace-certify-table colgroup col:nth-child(2) {
+    background: #ffffff;
+}
+
+.myspace-certify-table tbody tr:nth-child(1) {
+    height: 145px;
+    border-top : 4px solid #694ec2;
+}
+
+.myspace-certify-table tbody tr:nth-child(1) td {
+    padding-top: 30px;
+    vertical-align: top;
+}
+
+/* inner style */
+.myspace-certify-table span.type {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.myspace-certify-table .btn {
+    width: 160px;
+    height: 50px;
+    padding: 14px 24px;
+    border:2px solid #000000;
+    border-radius: 40px;
+    color: #000000;
+}
+
+.myspace-certify-table p.certify-info {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ff7081;
+}
+
+.myspace-certify-table input.certify-file {
+    width: 630px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 16px;
+    border-radius: 3px;
+    color: #ffffff;
 }
