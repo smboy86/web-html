@@ -1,4 +1,9 @@
 /* layout */
+/* ################ list ################# */
+section.newsfeed-banner {width:100%;margin:0 auto;}
+section.newsfeed-list {width:1140px;height:auto;margin: 0 auto;}
+
+/* ################ detail ################# */
 section.news-contents {
     width:1140px;
     margin:0 auto;
@@ -12,8 +17,261 @@ section.news-contents {
     color: #000000;
 }
 
-
 /* style */
+/* ################ list ################# */
+section.newsfeed-banner {
+    height:295px;
+    padding-top: 90px;
+    text-align: center;
+    background: url(../../images/program/img-sub-banner.jpg);
+}
+
+.newsfeed-banner .banner-content {
+    width: 346px;
+    height: 107px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.newsfeed-banner .banner-content .title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.newsfeed-banner .banner-content .content {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.newsfeed-banner .banner-content p.detail-banner-gubun {
+    width: 50px;
+    height: 1px;
+    margin: 20px auto;
+    border-top:1px solid #aeb1be;
+}
+
+.newsfeed-list .newsfeed-filter {
+    margin-top: 90px;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom: 2px solid #cccccc;
+    background: #f2f2f2;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li { 
+    display: inline-block;
+    width: 140px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li a { 
+    padding: 22px 22px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999999;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li span.bell-f {
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    background: url(../../images/newsfeed/icon-bell.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li span.gift-f {
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    background: url(../../images/newsfeed/icon-gift.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li span.user-f {
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    background: url(../../images/newsfeed/icon-user.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li.active span.bell-f {
+    background: url(../../images/newsfeed/icon-bell-on.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li.active span.gift-f {
+    background: url(../../images/newsfeed/icon-gift-on.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li.active span.user-f {
+    background: url(../../images/newsfeed/icon-user-on.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-filter .filter-box ul li.active a { 
+    color: black;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box a:hover{
+    background: #f9f7ff;
+    color: #a58ae5;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box .card {
+    text-align: left;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box .card .card-content {
+    height: 146px;
+    padding-top: 18px;
+    padding-left: 10px;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box .card .card-content h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box a:hover h4{
+    font-weight: 700;
+    color: #6f41d9;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box .card .card-content p.title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box a:hover p.title{
+    font-weight: 700;
+    color: #6f41d9;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box .card span.bell {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../../images/newsfeed/icon-bell-s.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box .card span.gift {
+    display: inline-block;
+    width: 21px;
+    height: 26px;
+    background: url(../../images/newsfeed/icon-gift-s.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box .card span.user {
+    display: inline-block;
+    width: 24px;
+    height: 26px;
+    background: url(../../images/newsfeed/icon-user-s.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box a:hover span.bell {
+    background: url(../../images/newsfeed/icon-bell-s-on.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box a:hover span.gift {
+    background: url(../../images/newsfeed/icon-gift-s-on.png) no-repeat;
+}
+
+.newsfeed-list .newsfeed-card-list .newsfeed-card-box a:hover span.user {
+    background: url(../../images/newsfeed/icon-user-s-on.png) no-repeat;
+}
+
+
+/* ################# card effect ##############  */
+.newsfeed-card-list {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    /* max-width: 66em; */
+    max-width: 100%;
+	list-style: none;
+	margin: 30px auto;
+    padding: 0;
+}
+
+.grid li {
+	display: block;
+    float: left;
+    padding: 7px;
+    width: 24%;
+    opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+	outline: none;
+	border: none;
+	display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 7px;
+}
+
+
+.grid.effect-6 {
+	-webkit-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-6 li.animate {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-transform: rotateX(-80deg);
+	transform: rotateX(-80deg);
+	-webkit-animation: flip .8s ease-in-out forwards;
+	animation: flip .8s ease-in-out forwards;
+}
+
+@-webkit-keyframes flip {
+	0% { }
+	100% { -webkit-transform: rotateX(0deg); opacity: 1; }
+}
+
+@keyframes flip {
+	0% { }
+	100% { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); opacity: 1; }
+}
+
+/* 
+반응형
+@media screen and (max-width: 900px) {
+	.grid li {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid li {
+		width: 100%;
+	}
+} 
+*/
+
+
+
+/* ################ detail ################# */
 .news-contents .news-header {
     position: relative;
     padding: 100px 60px 0 60px;
@@ -79,7 +337,6 @@ section.news-contents {
 .news-contents .news-header .news-share-box .news-share-list ul li:not(:first-child) {
     border-top: 0px;
 }
-
 
 .news-contents .news-content {
     padding: 100px 60px 0 60px;
