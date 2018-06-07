@@ -647,3 +647,132 @@ table.myspace-message-table {
     background-position: right top; 
 }
 
+/* ############### myspace-program-mine style ################# */
+.myspace .myspace-program-header .myprogram-header-box {
+    margin-top: 60px;
+    text-align: right;
+}
+
+.myspace .myspace-program-header .myprogram-header-box .program-status-filter {
+    width: 160px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    background: url(../../images/common/input-arrow-down.png) no-repeat 88% 50%;
+}
+
+.myspace .myspace-program-list {
+    margin-bottom: 160px;
+}
+
+.myspace .myspace-program-list .p-list{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.myspace .myspace-program-list .p-list ul li{
+    display:inline-block;
+    width: 360px;
+    height: 436px;
+    position: relative;
+    margin: 0 4px;
+    margin-bottom: 50px;
+    border: 1px solid #e5e5e5;
+}
+
+.myspace .myspace-program-list .p-list ul li:last-child{
+    margin-right: 0;
+}
+
+.myspace .myspace-program-list .p-list img {
+    max-width: 100%;
+}
+
+.myspace .myspace-program-list .p-list span.p-type {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    width:65px;
+    height:65px;
+    background:url(../../images/myspace/icon-program-type.png) no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+}
+
+.myspace .myspace-program-list .p-list span.p-status {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width:65px;
+    height:65px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+}
+
+.myspace .myspace-program-list .p-list span.p-status.temp {
+    background:url(../../images/myspace/icon-p-status-temp.png) no-repeat;
+}
+
+.myspace .myspace-program-list .p-list span.p-status.approve {
+    background:url(../../images/myspace/icon-p-status-temp.png) no-repeat;
+}
+
+.myspace .myspace-program-list .p-list span.p-status.regist {
+    background:url(../../images/myspace/icon-p-status-regist.png) no-repeat;
+}
+
+.myspace .myspace-program-list .p-list span.p-status.complete {
+    background:url(../../images/myspace/icon-p-status-complete.png) no-repeat;
+}
+
+.myspace .myspace-program-list .p-list ul li dl {
+    text-align: left;
+    padding: 0 16px;
+}
+
+.myspace .myspace-program-list .p-list ul li dl dt {
+    margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.myspace .myspace-program-list .p-list ul li dl dd {
+    height:24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.myspace .myspace-program-list .p-list ul li dl dd:nth-child(2) {
+    height: 40px;
+    margin-top: 9px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.myspace .myspace-program-list .p-list .p-button-box {
+    /* height: 25px; */
+    margin-top: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.myspace button.p-btns {
+    width: 152px;
+    height: 46px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 5px;
+}

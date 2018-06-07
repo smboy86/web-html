@@ -271,7 +271,7 @@ select {
     border: 1px solid #cccccc;
     border-radius: 0px;
 }
-  
+
 select::-ms-expand { /* for IE 11 */
     display: none;
 }
@@ -325,6 +325,13 @@ button.btn-white-gray {
     border-radius: 40px;
     background: #ffffff;
     color: #b8b8b8;
+}
+
+button.btn-gray-white {
+    border:1px solid #cccccc;
+    border-radius: 40px;
+    background: #cccccc;
+    color: #ffffff;
 }
 
 button.btn-purple-white {
