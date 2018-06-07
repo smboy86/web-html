@@ -596,10 +596,6 @@ table.myspace-message-table {
     text-align: center;
     background: #f2f2f2;
 }
-/* 
-.myspace-message-table tbody {
-    border : 1px solid #dddddd;
-} */
 
 .myspace-message-table tbody tr {
     border-top : 1px solid #dddddd;
@@ -647,7 +643,13 @@ table.myspace-message-table {
     background-position: right top; 
 }
 
-/* ############### myspace-program-mine style ################# */
+/* ############### myspace-program-apply/mine style ################# */
+.myspace .myprogram-header-banner-box {
+    width: 1140px;
+    height: 300px;
+    margin-top: 40px;
+}
+
 .myspace .myspace-program-header .myprogram-header-box {
     margin-top: 60px;
     text-align: right;
