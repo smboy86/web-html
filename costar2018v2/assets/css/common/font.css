@@ -15,14 +15,34 @@ span.txt-bold {
 }
 
 /* color */
+p.txt-white {
+    color: #ffffff;
+}
+
+p.txt-purple {
+    color: #683dcc;
+}
+
+p.txt-pink {
+    color: #d9419c;
+}
+
+span.txt-purple {
+    color: #683dcc;
+}
+
 span.txt-red {
     font-weight: 700;
     color:red;
 }
 
 span.txt-pink {
+    color:#d9419c;
+}
+
+span.txt-pink-b {
     font-weight: 700;
-    color:#ff7081;
+    color:#d9419c;
 }
 
 span.txt-sky {
@@ -38,7 +58,6 @@ h3 {
 }
 
 /*  etc  */
-
 span.f-gubun {
     font-size: 14px;
     color: #cccccc;

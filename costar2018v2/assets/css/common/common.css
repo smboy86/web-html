@@ -11,7 +11,7 @@ a {
 }
 */
 
-header {width:100%;height:85px;margin-bottom:2px;}
+header {width:100%;min-width:1140px;height:85px;margin-bottom:2px;}
 header.detail {border-bottom:1px solid #e5e5e5;} /* header 밑줄 */
 header.mymenu_layout {background: #694ec2}
 footer {width:100%;height:330px;margin:0 auto;}
@@ -204,7 +204,8 @@ footer .footer-bottom .footer-info .link_btn a:last-child {
     text-align: center;
 }
 
-.pager-box .pg .pg_wrap a, span {
+.pager-box .pg .pg_wrap a
+ , .pager-box .pg .pg_wrap span {
     vertical-align: middle;
 }
 
@@ -318,14 +319,14 @@ button.btn-black2-white {
 }
 
 button.btn-white-gray {
-    border:1px solid #999999;
+    border:2px solid #999999;
     border-radius: 40px;
     background: #ffffff;
     color: #b8b8b8;
 }
 
 button.btn-gray-white {
-    border:1px solid #cccccc;
+    border:2px solid #cccccc;
     border-radius: 40px;
     background: #cccccc;
     color: #ffffff;
@@ -338,7 +339,7 @@ button.btn-purple-white {
 }
 
 button.btn-white-purple {
-    border:1px solid #694ec2;
+    border:2px solid #694ec2;
     border-radius: 40px;
     background: #ffffff;
     color: #694ec2;
