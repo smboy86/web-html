@@ -1,0 +1,263 @@
+/* layout */
+/* ################ list ################# */
+section.space-banner {width:100%;min-width:1140px;margin:0 auto;}
+section.space-contents {width:1140px;height:auto;margin: 0 auto;}
+
+/* style */
+section.space-banner {
+    height:295px;
+    padding-top: 90px;
+    text-align: center;
+    background: url(../../images/space/img-sub-banner-space.png);
+}
+
+.space-banner .banner-content {
+    width: 346px;
+    height: 107px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.space-banner .banner-content .title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.space-banner .banner-content .content {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.space-banner .banner-content p.space-banner-gubun {
+    width: 50px;
+    height: 1px;
+    margin: 20px auto;
+    border-top:1px solid #aeb1be;
+}
+
+.space-contents .space-header .space-rooms {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.space-contents .space-header .space-rooms button {
+    margin: 0 8px;
+}
+
+.space-contents .space-header .space-rooms button.btn-purple {
+    width: 178px;
+    height: 50px;
+    border: 1px solid #c2a8ff;
+    background: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #c2a8ff;
+}
+
+.space-contents .space-header .space-rooms button.btn-purple.active {
+    border: 1px solid #683dcc;
+    background: #683dcc;
+    font-weight: 700;
+    color: white;
+}
+
+.space-contents .space-body {
+    text-align: center;
+}
+
+.space-contents .space-body p.section-title {
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.space-contents .space-body .room-info {
+    width: 100%;
+    height: 713px;
+    margin-top: 41px;
+    background: #fafafa;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.space-contents .space-body .room-info p:nth-child(2){
+    margin-top: 43px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.space-contents .space-body .room-info p:nth-child(3){
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.space-contents .space-body .room-info .room-btn-box button {
+    width: 150px;
+    height: 46px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.space-contents .space-body .room-info .space-sub-banner {
+    margin-top: 100px;
+}
+
+.space-contents .space-body .space-sub-banner {
+    margin-top: 100px;
+}
+
+.space-contents .space-body .room-price {
+    margin-bottom: 80px;
+}
+
+.space-contents .space-body .room-price .price-box {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.space-contents .space-body .room-price .price-box .price-item {
+    width: 200px;
+    height: 240px;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    cursor: pointer;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.space-contents .space-body .room-price .price-box .price-item:hover {
+    margin-top: -20px;
+}
+
+.space-contents .space-body .room-price .price-box .price-item:last-child {
+    width: 425px;
+}
+
+.space-contents .space-body .room-price .price-box .price-item img {
+    margin-right: 8px;
+}
+
+.space-contents .space-body .room-price .price-box .price-item p:nth-child(1) {
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.space-contents .space-body .room-price .price-box .price-item p:nth-child(2).price-box-gubun {
+    width: 20px;
+    height: 2px;
+    margin: 20px auto;
+    border-top:2px solid #aeb1be;
+}
+
+.space-contents .space-body .room-price .price-box .price-item p:nth-child(3) {
+    height: 27px;
+    line-height: 25px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    color: #999999;
+}
+
+.space-contents .space-body .room-price .price-box .price-item.price-item.default p:nth-child(3) {
+    color: white;
+}
+
+.space-contents .space-body .room-price .price-box .price-item p:nth-child(4) {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.space-contents .space-body .room-price .price-box .price-item p:nth-child(5) {
+    margin-top: 28px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.space-contents .space-body .room-price .price-box .price-item p.price-info {
+    line-height: 26px;
+    padding-left: 43px;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+}
+
+.space-contents .space-body .room-price .price-box .price-item.default {
+    width: 222px;
+    background: #683dcc;
+    margin-right: 15px;
+}
+
+.space-contents .space-body .room-price .price-box .price-item.default p:nth-child(1) {
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.space-contents .space-body .room-price .price-box .price-item.default p:nth-child(2).price-box-gubun {
+    width: 20px;
+    height: 2px;
+    margin: 20px auto;
+    border-top:2px solid #d4c2ff;
+}
+
+.space-contents .space-body .room-price .price-box .price-item.default p:nth-child(3) {
+    height: 27px;
+    line-height: 25px;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.space-contents .space-body .room-price .price-box .price-item.default p:nth-child(4) {
+    margin-top: 68px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #d4c2ff;
+}
+
+.space-contents .space-body .room-common-info {
+    width: 100%;
+    height: 290px;
+    position: relative;
+    background: #fafafa;
+    margin-bottom: 200px;
+}
+
+.space-contents .space-body .room-common-info img {
+    position: absolute;
+    top: 28%;
+    left: 78px;   
+}
+
+.space-contents .space-body .room-common-info p {
+    padding-top: 34px;
+    padding-left: 263px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+    line-height: 28px;
+}
