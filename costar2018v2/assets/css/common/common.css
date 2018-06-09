@@ -180,6 +180,17 @@ footer .footer-bottom .footer-info .link_btn a:last-child {
     margin-right:0;
 }
 
+/* ##########################  유틸리티  ######################## */
+/* ##########################  smPark Style  ######################## */
+.z-flex {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+
 /* ##########################  paging  ######################## */
 .msg_sound_only, .sound_only {
     display: inline-block !important;
@@ -229,6 +240,7 @@ footer .footer-bottom .footer-info .link_btn a:last-child {
 /* ##########################  Inputs  ######################## */
 input[type="text"] {
     width: 100px;
+    height: 50px;
     padding: .4em .5em;
     font-family: inherit;
     vertical-align: middle;
@@ -250,8 +262,43 @@ input[type="checkbox"] + label span {
     cursor:pointer;
 }
 
+input[type="checkbox"] + label span.disable {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../../images/common/input-checkbox-disable.png) no-repeat;
+    cursor:pointer;
+}
+
 input[type="checkbox"]:checked + label span {
     background:url(../../images/common/input-checkbox-on.png) no-repeat;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 16px;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../../images/common/input-radio-off.png) top no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background:url(../../images/common/input-radio-on.png) no-repeat;
 }
 
 input[type="file"] {
@@ -260,18 +307,24 @@ input[type="file"] {
 
 select {
     width: 100px;
-    padding: .4em .5em;
+    height: 50px;
+    /* padding: .4em .5em; */
+    padding: 0 16px;
     font-family: inherit;
     background: url(../../images/common/input-arrow-down.png) no-repeat 95% 50%;  
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
     border: 1px solid #cccccc;
-    border-radius: 0px;
+    border-radius: 3px;
 }
 
 select::-ms-expand { /* for IE 11 */
     display: none;
+}
+
+select:disabled {
+    background: #e5e5e5;
 }
 
 .textarea-box {

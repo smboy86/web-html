@@ -27,6 +27,10 @@ p.txt-pink {
     color: #d9419c;
 }
 
+p.txt-light {
+    font-weight: 300;
+}
+
 span.txt-purple {
     color: #683dcc;
 }
@@ -48,6 +52,10 @@ span.txt-pink-b {
 span.txt-sky {
     font-weight: 700;
     color: #5b80c9;
+}
+
+span.txt-light {
+    font-weight: 300;
 }
 
 h3 {

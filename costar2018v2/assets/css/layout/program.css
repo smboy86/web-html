@@ -405,92 +405,227 @@ section#main-program {
     padding-bottom: 140px;
 }
 
-/* 
-#program-list .program .p-more:hover img {
-    
-} 
-*/
+/* ###############  program regist  ################## */
+/* Layout */
+section.program-regist {width:1140px;height:auto;margin:0 auto;}
+body.regist-gray {background: #ebebeb;}
+header {background:#ffffff;}
 
-/* ##################### footer ##################### */
+/* Style */
+.program-regist p.display-title {
+    margin-top: 100px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+}
 
+.program-regist .program-input-box {
+    margin-top: 80px;
+    padding: 28px 60px 80px 60px;
+    background: #ffffff;
+}
 
-footer {
-    min-width:1140px;
-    background: #f5f5f5;
-    font-family: 'Noto Sans KR', sans-serif;
+.program-regist .program-input-box.first {
+    margin-top: 30px;
+    border-top: 4px solid #683dcc;
+}
+
+/* input-box common style */
+.program-regist .program-input-box p.type {
+    margin-top: 36px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.program-regist .program-input-box button {
+    width: 150px;
+    height: 50px;
+    margin-top: 16px;
+}
+
+.program-regist .program-input-box p.type span.txt-small-info {
     font-size: 14px;
-    font-weight: 400;
-    color: #808080;
+    font-weight: 300;
+    color: #666666;
 }
 
-footer .footer-top {
-    height: 100px;
-    border-bottom: 1px solid #dddddd;
+.program-regist .program-input-box input {
+    margin-top: 16px;
+    padding-left: 16px;
+    color: #000000;
+    border-radius: 3px;
 }
 
-footer .footer-top .footer-bar{
-    width: 1140px;
-    margin: 0 auto;
-    overflow: hidden;
+.program-regist .program-input-box select {
+    margin-top: 16px;
 }
 
-footer .footer-top .footer-bar .footer-logo {
-    float:left;
-    margin-top: 40px;
-}
-
-footer .footer-top .footer-bar .footer-menu  {
-    float:right;
-    margin-top: 40px;
-}
-
-footer .footer-top .footer-bar .footer-menu ul li {
-    display: inline-block;
-}
-
-footer .footer-top .footer-bar .footer-menu ul li a {
-    font-size: 14px;
-    color: #808080;
-}
-
-footer .footer-bottom .footer-info {
+/* inner  style */
+.program-regist .program-input-box .input-box {
+    width: 100%;
+    height: auto;
     position: relative;
-    width: 1140px;
-    margin: 0 auto;
-    font-size: 14px;
-    color: #808080;
-}
-
-footer .footer-bottom .footer-info .f-info-1 {
-    margin-top: 35px;
-}
-
-footer .footer-bottom .footer-info .f-info-2 {
-    margin-top: 15px;
-}
-
-footer .footer-bottom .footer-info .f-info-3 {
-    margin-top: 15px;
-}
-
-footer .footer-bottom .footer-info .f-info-4 {
-    margin-top: 42px;
-}
-
-footer .footer-bottom .footer-info ul li {
     display: inline-block;
 }
 
-footer .footer-bottom .footer-info .link_btn {
+.program-regist .program-input-box input.r-title
+, .program-regist .program-input-box input.r-type
+, .program-regist .program-input-box input.r-supply {
+    width: 100%;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.program-regist .program-input-box .input-box p.input-cnt-box {
     position: absolute;
-    bottom: 0px;
-    right: 0;
+    bottom: 16px;
+    right: 24px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #999999;
 }
 
-footer .footer-bottom .footer-info .link_btn a {
-    margin-right:29px;
+.program-regist .program-input-box .input-box span#input-title-cnt {
+    color: #ff7081;
 }
 
-footer .footer-bottom .footer-info .link_btn a:last-child {
-    margin-right:0;
+.program-regist .program-input-box .r-flex-box {
+    justify-content: space-between;
+}
+
+.program-regist .program-input-box .r-flex-box .left-area {
+    width: 500px;
+}
+
+.program-regist .program-input-box .r-flex-box .left-area select.r-type {
+    width: 90%;
+    height: 50px;
+    margin-top: 16px;
+}
+
+.program-regist .program-input-box .r-flex-box .right-area {
+    width: 500px;
+}
+
+.program-regist .program-input-box .r-flex-box .right-area .z-count-box {
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.program-regist .program-input-box .r-flex-box .right-area .z-count-box div {
+    height: 48px;
+    line-height: 48px;
+}
+
+.program-regist .program-input-box .r-flex-box .right-area .z-count-box img {
+    vertical-align: middle;
+}
+.program-regist .program-input-box .r-flex-box .right-area .z-count-box div:nth-child(1) {
+    width: 59px;
+    background: #f6f6f6;
+    border-right: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.program-regist .program-input-box .r-flex-box .right-area .z-count-box div:nth-child(2) {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.program-regist .program-input-box .r-flex-box .right-area .z-count-box div:nth-child(3){
+    width: 59px;
+    text-align: center;
+    background: #f6f6f6;
+    border-left: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.program-regist .program-input-box textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 16px;
+    resize: none;
+    min-height: 4.5em;
+    line-height:1.6em;
+    max-height: 9em;
+    padding: 12px 0 0 16px;
+    font-family: inherit;
+    border-color: #cccccc;
+}
+
+.program-regist .program-input-box input.r-tag {
+    width: 100%;
+}
+
+.program-regist .program-input-box .chk-box {
+    margin-top: 16px;
+}
+
+.program-regist .program-input-box .chk-box label {
+    margin-right: 20px;
+}
+
+.program-regist .program-input-box select.cal {
+    width: 140px;
+    margin-right: 20px;
+}
+
+.program-regist .program-input-box span.tild-gubun {
+    margin-right: 20px;
+}
+
+.program-regist .program-input-box p.total-time {
+    display: inline-block;
+}
+
+.program-regist .program-input-box select.r-site {
+    width: 490px;
+}
+
+.program-regist .program-input-box .radio-box {
+    margin-top: 16px;
+}
+
+.program-regist .program-input-box .join-price {
+    width: 100%;
+}
+
+.program-regist .program-input-box .bank-box {
+    justify-content: space-between;
+}
+
+.program-regist .program-input-box .bank-box .r-bank {
+    width: 200px;
+}
+
+.program-regist .program-input-box .bank-box .account-holder {
+    width: 200px;
+}
+
+.program-regist .program-input-box .bank-box .account-number {
+    width: 550px
+}
+
+
+.program-regist .submit-box {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    text-align: center;
+}
+
+.program-regist .submit-box button {
+    width: 300px;
+    height: 60px;
+    margin: 0 25px;
 }

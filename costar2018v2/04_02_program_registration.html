@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Added meta tags -->
+    <meta name="description" content="코스타 홈페이지에 오신 것을 환영합니다."><!-- 페이지에 대한 간단한 설명 (최대 150 자) -->
+    <meta name="subject" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star #코워킹스페이스 #공유공간 #무인카페 #콜라보 #문화공유공간 #문화공간"><!-- 사이트 주제에 대한 간략한 설명 -->
+    <meta name="url" content="http://co-star.kr/"><!-- 전체 도메인 이름 또는 웹 주소 -->
+    <!-- Social meta tags -->
+    <!-- Facebook -->
+    <meta property="fb:app_id" content="123456789">
+    <meta property="og:url" content="http://co-star.kr/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코스타 : Better together">
+    <meta property="og:image" content="http://co-star.kr/index_social.jpg">
+    <meta property="og:description" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star">
+    <meta property="og:site_name" content="코스타 : Better together">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="article:author" content="costar-admin">
+    <title>코스타 : Better together</title>
+    <!-- ### Link General tags ###-->
+    <link rel="canonical" href="http://co-star.kr/index.html"> <!-- Naver SEO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- ### CSS ### -->
+    <link rel="stylesheet" href="./assets/css/common/reset.css">
+    <link rel="stylesheet" href="./assets/css/common/font.css">
+    <link rel="stylesheet" href="./assets/css/common/common.css">
+    <link rel="stylesheet" href="./assets/css/layout/mymenu.css">
+    <link rel="stylesheet" href="./assets/css/layout/program.css">
+    <!-- ### JS ### -->
+    <script src="./assets/js/jquery-1.8.3.min.js"></script>
+    <script>
+        function showMyMenu(){
+            $('#myMenuList').show();
+        }
+
+        function hideMyMenu(){
+            $('#myMenuList .my-menu').scrollTop(0);
+            $('#myMenuList').hide();
+        }
+    </script>
+</head>
+<body class="regist-gray">
+    <header>
+        <div class="logo"><a href="./00_index.html"><img src="./assets/images/index/logo-costar.png" alt="로고-코스타"></a></div>
+        <div id="gnb" class="gnb">
+            <ul>
+                <li><a href="./00_index.html">코스타</a></li>
+                <li><a href="./02_space.html">1F 공유공간</a></li>
+                <li><a href="./03_coworking.html">2F 코워킹스페이스</a></li>
+                <li><a href="./04_program.html">프로그램</a></li>
+                <li><a href="./05_newsfeed.html">뉴스피드</a></li>
+            </ul>
+        </div>
+        <div class="ico-menu"><a href="javascript:showMyMenu();"><img src="./assets/images/index/icon-hamberger.png" alt="메뉴버튼"></a></div>
+    </header>
+    <section class="program-regist">
+        <p class="display-title">프로그램 등록</p>
+        <div class="program-input-box first">
+            <p class="type">프로그램 제목<span class="txt-pink"> *</span></p>
+            <div class="input-box">
+                <input id="title-input" class="r-title" type="text" placeholder="제목을 입력해주세요." value="" maxlength="18">
+                <p class="input-cnt-box">
+                    <span id="input-title-cnt">0</span><span>/ 18자</span>
+                </p>
+            </div>
+            <div class="z-flex r-flex-box">
+                <div class="left-area">
+                    <p class="type">프로그램 유형<span class="txt-pink"> *</span></p>
+                    <select name="r-type" id="r-type" class="r-type">
+                        <option value="">선택</option>
+                        <option value="">취미</option>
+                        <option value="">세미나</option>
+                    </select>
+                </div>
+                <div class="right-area">
+                    <p class="type">참여 희망 인원<span class="txt-pink"> *</span></p>
+                    <div class="z-count-box">
+                        <div class="minus"><img src="./assets/images/program/icon-minus.png" alt="마이너스"></div>
+                        <div class="txt-cnt">6</div>
+                        <div class="plus"><img src="./assets/images/program/icon-plus.png" alt="플러스"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="type">준비물</p>
+            <input class="r-supply" type="text" placeholder="없음" value="" >
+            <p class="type">프로그램 내용<span class="txt-pink"> *</span></p>
+            <textarea name="introduce" id="textarea-introduce" maxlength="1000" placeholder="프로그램 설명해주세요."></textarea>
+            <p class="type">대표 썸네일 이미지 <span class="txt-small-info">(가로 688 x 452 권장 / 최대 10MB)</span><span class="txt-pink"> *</span></p>
+            <input class="title" type="file" placeholder="없음" value="" ><button class="btn-purple-white">파일첨부</button>
+            <p class="type">이미지 <span class="txt-small-info">(가로 688 x Free 권장 / 최대 5장 / 한 장당 최대 10MB)</span></p>
+            <input class="title" type="file" placeholder="없음" value="" ><button class="btn-purple-white">파일첨부</button>
+            <p class="type">태그<span class="txt-pink"> *</span></p>
+            <input class="r-tag" type="text" placeholder="#네트워크 #친목" value="" >
+        </div>
+        <div class="program-input-box sec">
+            <p class="type">프로그램 일시<span class="txt-pink"> *</span></p>
+            <div class="z-flex chk-box">
+                <input type="checkbox" id="c1" name="interests" />
+                <label for="c1" class="day"><span></span>하루</label>
+                <input type="checkbox" id="c2" name="interests" />
+                <label for="c2"><span></span>반복</label>
+                <input type="checkbox" id="c3" name="interests" />
+                <label for="c3"><span class="disable"></span>월</label>
+                <input type="checkbox" id="c4" name="interests" />
+                <label for="c4"><span class="disable"></span>화</label>
+                <input type="checkbox" id="c5" name="interests" />
+                <label for="c5"><span class="disable"></span>수</label>
+                <input type="checkbox" id="c6" name="interests" disable />
+                <label for="c6"><span class="disable"></span>목</label>
+                <input type="checkbox" id="c7" name="interests" />
+                <label for="c7"><span class="disable"></span>금</label>
+                <input type="checkbox" id="c8" name="interests" />
+                <label for="c8"><span class="disable"></span>토</label>
+                <input type="checkbox" id="c9" name="interests" />
+                <label for="c9"><span class="disable"></span>일</label>
+            </div>
+            <select name="r-year" id="r-year" class="cal r-year">
+                <option value="">2018</option>
+                <option value="">2017</option>
+                <option value="">2016</option>
+                <option value="">2015</option>
+            </select>
+            <select name="r-month" id="r-month" class="cal r-month">
+                <option value="">06</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+            </select>
+            <select name="r-day" id="r-day" class="cal r-day">
+                <option value="">09</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+            </select>
+            <span class="tild-gubun">~</span>
+            <select name="r-year" id="r-year" class="cal r-year" disabled>
+                <option value="">2018</option>
+                <option value="">2017</option>
+                <option value="">2016</option>
+                <option value="">2015</option>
+            </select>
+            <select name="r-month" id="r-month" class="cal r-month" disabled>
+                <option value="">06</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+            </select>
+            <select name="r-day" id="r-day" class="cal r-day" disabled>
+                <option value="">09</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+            </select>
+            <p class="type">프로그램 시간<span class="txt-pink"> *</span></p>
+            <select name="r-month" id="r-month" class="cal r-month">
+                <option value="">12</option>
+                <option value="">00</option>
+                <option value="">01</option>
+                <option value="">02</option>
+            </select>
+            <select name="r-day" id="r-day" class="cal r-day">
+                <option value="">00</option>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+            </select>
+            <span class="tild-gubun">~</span>
+            <select name="r-month" id="r-month" class="cal r-month">
+                <option value="">16</option>
+                <option value="">00</option>
+                <option value="">01</option>
+                <option value="">02</option>
+            </select>
+            <select name="r-day" id="r-day" class="cal r-day">
+                <option value="">30</option>
+                <option value="">00</option>
+                <option value="">30</option>
+            </select>
+            <p class="total-time txt-purple txt-light">소유시간 : <span class="txt-bold">4시간 30분</span></p>
+            <p class="type">프로그램 장소<span class="txt-pink"> *</span></p>
+            <select name="r-site" id="r-site" class="r-site">
+                <option value="">코스타 1F 라운지</option>
+                <option value="">코스타 1F 키친</option>
+                <option value="">코스타 1F Room A</option>
+            </select>
+        </div>
+        <div class="program-input-box">
+            <p class="type">프로그램 참가 비용 유형<span class="txt-pink"> *</span></p>
+            <div class="radio-box">
+                <input type="radio" id="r1" name="type" />
+                <label for="r1"><span></span>무료</label>
+                <input type="radio" id="r2" name="type" />
+                <label for="r2"><span></span>유료</label>
+                <input type="radio" id="r3" name="type" />
+                <label for="r3"><span></span>현장결제</label>
+            </div>
+            <p class="type">프로그램 참가 비용</p>
+            <input class="join-price" type="text" placeholder="0" value="" >
+            <p class="type">주최자 무통장입금 은행계좌 <span class="txt-light">(참가비용 있을시 필수 기입)</span></p>
+            <div class="bank-box z-flex">
+                <select name="r-bank" id="r-bank" class="r-bank">
+                    <option value="">코스타은행</option>
+                    <option value="">국민은행</option>
+                    <option value="">기업은행</option>
+                </select>
+                <input class="account-holder" type="text" placeholder="예금주" value="" >
+                <input class="account-number" type="text" placeholder="계좌번호" value="" >
+            </div>
+        </div>
+        <div class="submit-box">
+            <button class="btn-purple-white">승인신청</button>
+            <button class="btn-white-purple">임시저장</button>
+        </div>
+    </section>
+    <div id="myMenuList" class="myMenuList" style="display: none;">
+        <div class="blind_box">&nbsp;</div>
+        <div class="my-menu">
+            <div class="my-info">
+                <ul>
+                    <li><a href="#"><img class="my-profile-img" src="./assets/images/mymenu/img-members-1.png" alt="프로필사진"></a></li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/mymenu/icon-member-level.png" alt="">
+                            <span>날다람지</span>님
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/mymenu/icon-coin.png" alt="마일리지">
+                            <span class="coin-txt">마일리지</span>
+                            <span class="coin-txt-int">20,100</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/mymenu/icon-message.png" alt="쪽지">
+                            <span class="message-txt">쪽지</span>
+                            <span class="message-txt-int">3</span>
+                            <span class="icon-new-pink">&nbsp;&nbsp;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-menu-list">
+                <ul>
+                    <li><div class="link"><a href="#">코스타 홈으로 가기</a></div></li>
+                    <li><div class="link"><a href="#">코스타 멤버쉽</a></div></li>
+                    <li><div class="link"><a href="./06_04_reservation_list.html">1F 대관<span class="icon-new-pink">&nbsp;&nbsp;</span></a></div></li>
+                    <li><div class="link"><a href="#">2F 코워킹스페이스</a></div>
+                        <div class="my-menu-sub-list">
+                            <ul>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="./06_03_coworking_list.html">내가 참여한 프로그램</a></li>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="#">MY 프로그램 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="open">
+                        <div class="link"><a href="javascript:clickMyMenu();">프로그램</a></div>
+                        <div class="my-menu-sub-list">
+                            <ul>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="#">내가 참여한 프로그램</a></li>
+                                <li><span class="icon-menu-gray">&nbsp;&nbsp;</span><a href="#">MY 프로그램 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><div class="link"><a href="#">회원정보수정</a></div></li>
+                    <li><div class="link"><a href="#">로그아웃</a></div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-bar">
+                <div class="footer-logo">
+                    <img src="./assets/images/index/logo-costar-footer.png" alt="footer 로고">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">회사소개</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">이용약관</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">개인정보처리방침</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">운영정책</a><span class="f-gubun">|</span></li>
+                        <li><a href="#">고객문의</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <div class="f-info-1">
+                    <ul>
+                        <li>상호명:코스타</li><span class="f-gubun">|</span>
+                        <li>대표:김세희</li><span class="f-gubun">|</span>
+                        <li>사업자등록증:000-00-000000</li><span class="f-gubun">|</span>
+                        <li>통신판매업신고번호: 0000-서울혜화-0000</li><span class="f-gubun">|</span>
+                        <li><a href="#">사업자등록정보 ></a></li>
+                    </ul>
+                </div>
+                <div class="f-info-2">
+                    <ul>
+                        <li>영업소재지:서울시 종로구 혜화동 1층</li><span class="f-gubun">|</span>
+                        <li>이메일: costar2018@naver.com</li>
+                    </ul>
+                </div>
+                <div class="f-info-3">
+                    <ul>
+                        <li>대표전화: 1599-4312 (평일 오전 10시 ~ 오후 6시)</li>
+                    </ul>
+                </div>
+                <div class="f-info-4">
+                    Copyright Co-star Corp. All Rights Reserced.
+                </div>
+                <div class="link_btn">
+                        <a href="https://blog.naver.com/costar2018" target="_blank"><img src="./assets/images/index/link-blog.gif" alt="네이버블로그"></a>
+                        <a href="https://www.instagram.com/costar2018" target="_blank"><img src="./assets/images/index/link-insta.gif" alt="인스타그램"></a>
+                        <a href="https://www.facebook.com/costar2018" target="_blank"><img src="./assets/images/index/link-facebook.gif" alt="페이스북"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ### JS Body after Complete Dom ### -->  
+    <script>
+        $("#myMenuList .blind_box").click(function(e) { 
+            hideMyMenu();
+        });
+
+        $(".my-menu-list .link").click(function(e) {
+            var $AllList = $(".my-menu-list").find('.open');
+            var $li = $(this).parent();
+
+            if($AllList.index() == $li.index()) {
+                $AllList.removeClass('open');
+                $(this).siblings('.my-menu-sub-list').slideUp();
+            } else if ($AllList.index() != $li.parent().index() && $AllList.length > 0){
+                $AllList.removeClass('open');
+                $AllList.find('.my-menu-sub-list').slideUp();
+                
+                $(this).siblings('.my-menu-sub-list').slideDown(function(){
+                    $li.addClass('open');
+                });
+            } else {
+                $li.addClass('open');
+                $(this).siblings('.my-menu-sub-list').slideDown();
+            }
+        });
+
+        $('#title-input').keyup(function (e){
+            var content = $(this).val();
+            $('#input-title-cnt').html(content.length);
+        });
+        $('#input-title-cnt').keyup();
+        
+        $('.z-count-box .minus').on("click", function(){
+            if(parseInt($('.z-count-box .txt-cnt').text()) - 1 >= 0){
+                $('.z-count-box .txt-cnt').text(parseInt($('.z-count-box .txt-cnt').text()) - 1);
+            } else {
+                alert("참여 희망 인원이 0명 입니다.")
+            }
+        });
+
+        $('.z-count-box .plus').on("click", function(){
+            if(parseInt($('.z-count-box .txt-cnt').text()) + 1 <= 100){
+                $('.z-count-box .txt-cnt').text(parseInt($('.z-count-box .txt-cnt').text()) + 1);
+            } else {
+                alert("참여 희망 인원이 0명 입니다.")
+            }
+        });
+    </script>
+    
+</body>
+</html>
