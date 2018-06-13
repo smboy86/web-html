@@ -1,5 +1,4 @@
 /* layout */
-/* ################ list ################# */
 section.space-banner {width:100%;min-width:1140px;margin:0 auto;}
 section.space-contents {width:1140px;height:auto;margin: 0 auto;}
 
@@ -259,4 +258,516 @@ section.space-banner {
     font-weight: 300;
     color: #666666;
     line-height: 28px;
+}
+
+/* #################### space_reservation ############# */
+/* Layout */
+section.space-booking {width:1140px;height:auto;margin:0 auto;}
+body.regist-gray {background: #ebebeb;}
+header {background:#ffffff;}
+
+.space-booking p.display-title {
+    margin-top: 100px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.space-booking .space-input-box {
+    margin-top: 80px;
+    padding: 28px 60px 80px 60px;
+    background: #ffffff;
+}
+
+.space-booking .space-input-box.first {
+    margin-top: 30px;
+    border-top: 4px solid #683dcc;
+}
+
+/* input-box common style */
+.space-booking .space-input-box p.type {
+    margin-top: 36px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.space-booking .space-input-box button {
+    width: 150px;
+    height: 50px;
+    margin-top: 16px;
+}
+
+.space-booking .space-input-box p.type span.txt-small-info {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.space-booking .space-input-box input {
+    margin-top: 16px;
+    padding-left: 16px;
+    color: #000000;
+    border-radius: 3px;
+}
+
+.space-booking .space-input-box select {
+    margin-top: 16px;
+}
+
+/* inner  style */
+.space-booking .space-input-box input {
+    width: 100%;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.space-booking .space-input-box .accordian-box {
+    margin-top: 16px;
+    border:1px solid #cccccc;    
+}
+
+.space-booking .space-input-box .accordian-box p.a-box-title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    background: #e5e5e5;
+    padding-left: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.space-booking .space-input-box .accordian-box p.a-box-title img {
+    position: absolute;
+    top:20px; 
+    right: 16px;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.space-booking .space-input-box .accordian-box p.a-box-title img.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.space-booking .space-input-box .accordian-box .a-contents {
+    width: 100%;
+    padding: 0 40px 30px 40px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-img-box {
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-img-box img {
+    width:48%;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-img-box img.left {
+    float: left;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-img-box img.right {
+    float: right;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-title {
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-content-text {
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-content-info-1 {
+    height: 34px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #cccccc;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .first {
+    margin-top: 16px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-content-info-2 {
+    height: 58px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #cccccc;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-info-type {
+    display: inline-block;
+    width: 150px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-info-type span {
+    display: inline-block;
+    width: 4px;
+    height: 9px;
+    background: url(../../images/space/icon-space-bullet.png) no-repeat;
+    margin-right: 8px;
+}
+
+.space-booking .space-input-box input.r-purpose-selct {
+    width: 490px;
+    float: left;
+}
+
+.space-booking .space-input-box input.r-purpose-text {
+    width: 490px;
+    float: right;
+}
+
+.space-booking .space-input-box select.r-space {
+    width: 490px;
+}
+
+.space-booking .space-input-box .z-count-box {
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: left;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.space-booking .space-input-box .z-count-box div {    
+    height: 48px;
+    line-height: 48px;
+}
+
+.space-booking .space-input-box .z-count-box img {
+    vertical-align: middle;
+}
+
+.space-booking .space-input-box .z-count-box div:nth-child(1) {
+    width: 59px;
+    background: #f6f6f6;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.space-booking .space-input-box .z-count-box div:nth-child(2) {
+    width: 420px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.space-booking .space-input-box .z-count-box div:nth-child(3){
+    width: 59px;
+    text-align: center;
+    background: #f6f6f6;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.space-booking .space-input-box .z-count-box p.z-count-box-info {
+    align-self: center;
+    padding-left: 20px;
+}
+
+.space-booking .space-input-box textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 16px;
+    resize: none;
+    min-height: 4.5em;
+    line-height:1.6em;
+    max-height: 9em;
+    padding: 12px 0 0 16px;
+    font-family: inherit;
+    border-color: #cccccc;
+}
+
+.space-booking .space-input-box .radio-box {
+    margin-top: 16px;
+}
+
+.space-booking .space-input-box .accordian-box.table {
+    border: 0px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents.fluid {
+    padding:0;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents table tr td {
+    width: 25%;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid #cccccc;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents table tr.active {
+    font-weight: 700;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents table tr.active .txt-chk{
+    color: #41d9d9;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents table .radio-box {
+    margin-top: 0;
+}
+ 
+.space-booking .space-input-box .accordian-box .a-contents table button {
+    margin-top: 0;
+    width: 100px;
+    height: 30px;
+
+}
+
+.space-booking .space-input-box .space-booking-calendar {
+    margin-top: 80px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .week-nav {
+    justify-content: center;
+}
+
+.space-booking .space-input-box .space-booking-calendar .week-nav .space-name {
+    width: 260px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar {
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .left-time-table {
+    width: 60px;
+    padding-top: 20px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .left-time-table table {
+    font-size: 14px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .left-time-table table tr {
+    height: 44px;
+    vertical-align: bottom;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .left-time-table table tr:last-child td {
+    height: 80px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table colgroup col {
+    width: 14.2%;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table {
+    width: 100%;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table table th {
+    height: 52px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table table tr td {
+    height: 42px;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    font-weight: 300;
+    color: #999999;
+    cursor: pointer;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table table tr td.choice {
+    background: #683dcc;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table table tr:last-child td {
+    height: 80px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table colgroup col {
+    width: 14.2%;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-calendar .right-cal-table colgroup col.active {
+    /* border:1px solid #d0f4f2; */
+    background: linear-gradient(315deg,
+    #d4f8f5 25%, #c0e4e2 0, #c0e4e2 50%,
+    #d4f8f5 0, #d4f8f5 75%, #c0e4e2 0);
+    background-size: 10px 10px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .table-legend {
+    padding-left: 60px;    
+}
+
+.space-booking .space-input-box .space-booking-calendar .table-legend span {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .table-legend img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .table-legend img.legend-q {
+    margin-right: 26px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-result-box {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-result-box .space-result-name {
+    margin-right: 8px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-result-box p.result-gubun {
+    margin-top: 20px;
+    border-top: 2px solid #666666;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-result-box img.icon-delete-choice {
+    margin-left: 8px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-result-box .total-amount-box {
+    margin-top: 20px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-result-box .total-amount-box span.total-amount {
+    margin-right: 8px;
+}
+
+.space-booking .space-input-box .space-booking-calendar .space-result-box .total-amount-box span.discount-amount {
+    margin-right: 8px;
+}
+
+
+.space-booking .booking-gubun {
+    border-top: 1px solid #cccccc;
+    margin: 24px 0 50px 0;
+}
+
+
+
+.space-booking .space-input-box .accordian-box .a-contents .hp-box {
+    justify-content: space-between;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .hp-box input {
+    margin-right: 0;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .r-hp1 {
+    width: 300px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .r-hp2 {
+    width: 300px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .r-hp3 {
+    width: 300px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-content-line {
+    height: 50px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e5e5;
+    color: #666666;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents.term .a-content-line {
+    min-height: 50px;
+    height: auto;
+    position: relative;
+    padding-top: 16px;
+    border-top: 1px solid #e5e5e5;
+    color: #666666;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents.term .a-content-line img {
+    position: absolute;
+    top:26px; 
+    right: 16px;
+    transform:translate(-50%, -50%);
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-content-line.first {
+    border-top: 0px;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents strong {
+    margin-right: 12px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.space-booking .space-input-box .accordian-box .a-contents .a-content-line .terms-box {
+    display: block;
+    width: 100%;
+    min-height: 210px;
+    margin-top: 16px;
+    padding: 16px 40px;
+    background: #fafafa;
+    color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+.space-booking .submit-box {
+    margin-top: 80px;
+    margin-bottom: 160px;
+    text-align: center;
+}
+
+.space-booking .submit-box button {
+    width: 300px;
+    height: 60px;
+    margin: 0 25px;
+    font-size: 20px;
+    font-weight: 400;
 }

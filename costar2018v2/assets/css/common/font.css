@@ -10,10 +10,13 @@
 
 /* ###################### global font style ###################### */
 /* weight */
+span.txt-txt-regular {
+    font-weight: 400;
+}
+
 span.txt-bold {
     font-weight: 700;
 }
-
 /* color */
 p.txt-white {
     color: #ffffff;
@@ -33,6 +36,10 @@ p.txt-light {
 
 span.txt-purple {
     color: #683dcc;
+}
+
+span.txt-mint {
+    color: #41d9d9;
 }
 
 span.txt-red {
