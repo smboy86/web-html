@@ -1,0 +1,121 @@
+/* layout */
+/* ################ list ################# */
+section.introduce-banner {width:100%;min-width:1140px;margin:0 auto;}
+section.introduce-contents {width:1140px;height:auto;margin: 0 auto;padding-bottom: 150px;}
+
+
+/* style */
+section.introduce-banner {
+    height:295px;
+    padding-top: 90px;
+    text-align: center;
+    background: url(../../images/coworking/img-sub-banner-coworking.png);
+}
+
+.introduce-banner .banner-content {
+    width: 346px;
+    height: 107px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.introduce-banner .banner-content .title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.introduce-banner .banner-content .content {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.introduce-banner .banner-content p.introduce-banner-gubun {
+    width: 50px;
+    height: 1px;
+    margin: 20px auto;
+    border-top:1px solid #aeb1be;
+}
+
+.introduce-contents .introduce-header .introduce-rooms {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.introduce-contents .introduce-header .introduce-rooms button {
+    margin: 0 8px;
+}
+
+.introduce-contents .introduce-header .introduce-rooms button.btn-purple {
+    width: 178px;
+    height: 50px;
+    border: 1px solid #c2a8ff;
+    background: #ffffff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #c2a8ff;
+}
+
+.introduce-contents .introduce-header .introduce-rooms button.btn-purple.active {
+    border: 1px solid #683dcc;
+    background: #683dcc;
+    font-weight: 700;
+    color: white;
+}
+
+.introduce-contents .introduce-body {
+    /* padding-top: 80px; */
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* ##################### location ################### */
+.introduce-contents .introduce-body .body-content {
+    margin-top: 60px;
+}
+
+.introduce-contents .introduce-body .body-content .content-location {
+    text-align: left;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.introduce-contents .introduce-body .body-content .content-location ul li {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: flex-start;
+    border-top: 1px solid #eeeeee;
+    height: 90px;
+    line-height: 30px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.introduce-contents .introduce-body .body-content .content-location ul li:hover {
+    background: #f8f8f8;
+}
+
+.introduce-contents .introduce-body .body-content .content-location .icon-box {
+    width: 320px;
+    padding-left: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #683dcc;
+}
+
+.introduce-contents .introduce-body .body-content .content-location .icon-box img {
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.introduce-contents .introduce-body .body-content .content-location .text-box {    
+    font-size: 16px;
+}
