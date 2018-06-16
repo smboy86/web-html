@@ -162,6 +162,7 @@ header {
 
 #footer #f_mo{
     display: none;
+    height: 30px;
 }
 
 @media screen and (max-width:800px) {
