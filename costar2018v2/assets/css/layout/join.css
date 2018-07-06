@@ -1,0 +1,74 @@
+/* layout */
+section.join {
+    width:1140px;
+    min-height: 578px;
+    margin:0 auto;
+}
+
+.join .join-box {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.join .join-box .terms-box {
+    margin-top: 76px;
+    height: 375px;
+}
+
+.join .join-box .terms-box .term-a {
+    border: 1px solid #e5e5e5;
+    float: left;
+    width: 540px;
+    height: 370px;
+}
+
+.join .join-box .terms-box .term-b {
+    border: 1px solid #e5e5e5;
+    float: right;
+    width: 540px;
+    height: 370px;
+}
+
+.join .join-box .terms-box ul li {
+    text-align: left;
+}
+
+.join .join-box .terms-box ul li:nth-child(2) {
+    height: 297px;
+    padding: 41px 31px;
+    overflow-y: auto;
+    -ms-overflow-style: auto;
+}
+
+.join .join-box .terms-box p.term-title {
+    padding: 21px 0 24px 31px;
+    background: #fafafa;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.join .join-box .terms-check-box {
+    margin-top: 60px;
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.join .join-box .submit-box {
+    padding: 60px 0;
+}
+
+.join .join-box .submit-box .btns {
+    width: 260px;
+    height: 60px;
+    margin: 0px 20px 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
