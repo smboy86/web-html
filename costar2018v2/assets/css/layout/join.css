@@ -64,6 +64,10 @@ section.join {
     padding: 60px 0;
 }
 
+.join .join-box .submit-box.home {
+    margin-top: 100px;
+}
+
 .join .join-box .submit-box .btns {
     width: 260px;
     height: 60px;
