@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Added meta tags -->
+    <meta name="description" content="코스타 홈페이지에 오신 것을 환영합니다."><!-- 페이지에 대한 간단한 설명 (최대 150 자) -->
+    <meta name="subject" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star #코워킹스페이스 #공유공간 #무인카페 #콜라보 #문화공유공간 #문화공간"><!-- 사이트 주제에 대한 간략한 설명 -->
+    <meta name="url" content="http://co-star.kr/"><!-- 전체 도메인 이름 또는 웹 주소 -->
+    <!-- Social meta tags -->
+    <!-- Facebook -->
+    <meta property="fb:app_id" content="123456789">
+    <meta property="og:url" content="http://co-star.kr/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코스타 : Better together">
+    <meta property="og:image" content="http://co-star.kr/index_social.jpg">
+    <meta property="og:description" content="당신과 나, 그리고 우리 빛나는 내일 위해 with CO-Star">
+    <meta property="og:site_name" content="코스타 : Better together">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="article:author" content="costar-admin">
+    <title>코스타 : Better together</title>
+    <!-- ### Link General tags ###-->
+    <link rel="canonical" href="http://co-star.kr/index.html"> <!-- Naver SEO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- ### CSS ### -->
+    <link rel="stylesheet" href="./assets/css/common/reset.css">
+    <link rel="stylesheet" href="./assets/css/common/font.css">
+    <link rel="stylesheet" href="./assets/css/layout/index_m.css">
+    <link rel="stylesheet" href="./assets/css/plugin/swiper.min.css">
+    <!-- ### JS ### -->
+    <script src="./assets/js/jquery-1.8.3.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    spaceBetween: 30,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                autoplay : {
+                    delay : 4000
+                },
+            });
+
+            // $('#btn-rent').bind('clcik', function(){
+
+            // });
+
+        });
+
+        function showMyMenu(){
+            $('#myMenuList').show();
+        }
+
+        function hideMyMenu(){
+            $('#myMenuList .my-menu').scrollTop(0);
+            $('#myMenuList').hide();
+        }
+
+        var aTop = 0;
+        var b_ani = true;
+
+
+    </script>
+</head>
+<body>
+    <header class="z-flex">
+        <div class="logo"><a href="./00_index.html"><img src="./assets/images/index/logo-costar.png" alt="로고-코스타"></a></div>
+        <div class="ico-menu" style="display: none;"><a href="javascript:showMyMenu();"><img src="./assets/images/index/icon-hamberger.png" alt="메뉴버튼"></a></div>
+    </header>
+    <section id="main-banner">
+        <!-- Swiper -->
+        <div class="swiper-container main">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-banner1.png" alt="배너1"></div>
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-banner1.png" alt="배너2"></div>
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-banner1.png" alt="배너3"></div>
+            </div>
+            <div class="swiper-button-next swiper-button-black"></div>
+            <div class="swiper-button-prev swiper-button-black"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="sec-1">
+        <div class="title">1F 문화공유공간</div>
+        <div class="content">무인카페, 라운지, 공유부엌, 정원</div>
+        <!-- Swiper -->
+        <div class="swiper-container section">
+            <div class="swiper-wrapper subbanner-1">
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-sec1-banner1.png" alt="배너1"></div>
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-sec1-banner1.png" alt="배너2"></div>
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-sec1-banner1.png" alt="배너3"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="btn-box">
+                <button  id="btn-rent" type="button"class="btn-white-black" onclick="location.href='https://spacecloud.kr/space/14871'">공간 대관 신청</button>
+            </div>
+        </div>
+    </section>
+    <section class="inner-banner">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScg9pzTZJWfESGnDozlRbLARnwydChHgqESOsYfpXYREdYHnA/viewform" target="_blank"><img src="./assets/images/m_index/img-innerbanner.png" alt="이너배너"></a>
+    </section>
+    <section class="sec-2">
+        <div class="title">2F 코워킹스페이스</div>
+        <div class="content">같이 일하는 공간</div>
+        <!-- Swiper -->
+        <div class="swiper-container section">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-sec1-banner1.png" alt="배너1"></div>
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-sec1-banner1.png" alt="배너2"></div>
+                <div class="swiper-slide"><img src="./assets/images/m_index/img-sec1-banner1.png" alt="배너3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="title">입주자 혜택</div>
+        <div class="benefit">
+            <img src="./assets/images/m_index/img-benefit.png" alt="혜택">
+        </div>
+        <div class="btn-box">
+            <button type="button" id="btn-join" class="btn-white-black" onclick="location.href='https://spacecloud.kr/search?q=%EC%BD%94%EC%8A%A4%ED%83%80'">코워킹스페이스 입주 신청</button>
+        </div>
+    </section>
+    <section class="sec-4">
+        <div class="title">코스타 프로그램</div>
+        <!-- Swiper -->
+        <div class="swiper-container section">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="http://co-star.kr/bbs/board.php?bo_table=co_program&wr_id=6"><img src="./assets/images/m_index/img-program.png" alt="프로그램"></a></div>
+                <div class="swiper-slide"><a href="http://co-star.kr/bbs/board.php?bo_table=co_program&wr_id=6"><img src="./assets/images/m_index/img-program.png" alt="프로그램"></a></div>
+                <div class="swiper-slide"><a href="http://co-star.kr/bbs/board.php?bo_table=co_program&wr_id=6"><img src="./assets/images/m_index/img-program.png" alt="프로그램"></a></div>
+            </div>
+            <div class="swiper-button-next swiper-button-black"></div>
+            <div class="swiper-button-prev swiper-button-black"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="inner-banner">
+        <a href="https://pf.kakao.com/_cMxeUC" target="_blank"><img src="./assets/images/m_index/img-innerbanner-2.png" alt="이너배너2"></a>
+    </section>
+    <section class="sec-5">
+        <div class="title">뉴스피드</div>
+        <ul>
+            <li><a href="javascript:alert('뉴스피드 터치')";><span class="bell-f">&nbsp;</span><span class="type">공지사항</span><span class="subject">코스타 데이 안내</span><span class="date">2018.05.01</span></a></li>
+            <li><a href="javascript:alert('뉴스피드 터치')";><span class="gift-f">&nbsp;</span><span class="type">이벤트</span><span class="subject">코스타 오픈 이벤트</span><span class="date">2018.05.01</span></a></li>
+            <li><a href="javascript:alert('뉴스피드 터치')";><span class="user-f">&nbsp;</span><span class="type">인터뷰</span><span class="subject">플레이슈터 강경호 대표 인터뷰</span><span class="date">2018.05.01</span></a></li>
+        </ul>
+    </section>
+    <section class="sec-6">
+        <div class="title">SNS에서 만나는 <span class="txt-purple">#코스타</span></div>
+        <div class="sns-list">
+            <img src="./assets/images/m_index/img-sns.png" alt="sns 리스트임시">
+        </div>
+        <div class="btn-box">
+            <button type="button" id="btn-rent" class="btn-white-black" onclick="location.href='https://www.instagram.com/costar2018/'">@costar2018 팔로우</button>
+        </div>
+    </section>
+    <section class="sec-7">
+        <div class="title">오시는 길</div>
+        <div class="map">
+            <a href="https://m.store.naver.com/attractions/detail?id=1801642114&back=false"><img src="./assets/images/m_index/img-position.png" alt="위치"></a>
+        </div>
+        <div class="map-info">
+            <p><span class="txt-bold">4호선 혜화역 1번 출구</span> 혹은 <span class="txt-bold">한성대입구역 5번출구</span>에서</p>
+            <p>혜화동 로터리 방향으로 도보 10분</p>
+            <div class="opentime">
+                <p>OPEN <span class="txt-purple txt-bold">10:00</span> - CLOSE <span class="txt-purple txt-bold">22:00</span></p>
+                <p>(매주 화요일 쉼/ <span class="txt-bol">코스타데이</span>)</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <div class="f-first">
+                    <a href="#">이용약관&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+            </li>
+            <li>
+                <!-- [<div class="f-mid-1"></div>]상호명 : 코스타 | 대표 : 김세희</div> -->
+                <!-- <div class="f-mid-2">사업자등록번호 : 275-28-00535</div> -->
+                <!-- <div class="f-mid-3">통신판매신고번호 : 제2018-서울종로-00000호</div> -->
+                <!-- <div class="f-mid-4">이메일 : costar2018@co-star.kr</div> -->
+                <p>상호명 : 코스타 | 대표 : 김세희</p>
+                <p>사업자등록번호 : 275-28-00535</p>
+                <p>이메일 : costar2018@co-star.kr</p>
+            </li>
+            <li>
+                <p>TEL 02 - 742 - 1500</p>
+                <p>문의시간 : 10:00~18:00 (점심시간 12:00-13:00)</p>
+                <div class="footer-icobox">
+                    <a href="https://blog.naver.com/costar2018" target="_blank"><img src="./assets/images/m_index/ico-blog-f.png" alt="블로그"></a>
+                    <a href="https://www.instagram.com/costar2018/" target="_blank"><img src="./assets/images/m_index/ico-insta-f.png" alt="인스타"></a>
+                    <a href="https://www.facebook.com/costar2018/" target="_blank"><img src="./assets/images/m_index/ico-facebook-f.png" alt="페이스북"></a>
+                    <a href="http://pf.kakao.com/_cMxeUC" target="_blank"><img src="./assets/images/m_index/ico-kakao-f.png" alt="카카오"></a>
+                </div>
+                <p>Copyright Co-star Corp. All Rights Reserced.</p>
+            </li>
+        </ul>
+    </footer> 
+</body>
+</html>

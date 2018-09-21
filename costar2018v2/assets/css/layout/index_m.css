@@ -1,0 +1,284 @@
+html {overflow-y:scroll;width:100%;height:100%;min-width:320px}
+body {margin:0;padding:0;font-size:0.75em;width:100%;height:100%}
+
+/*/////////// 유틸리티 //////////// */
+.z-flex {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+button.btn-white-black {
+    border-radius: 40px;
+    background: #ffffff;
+    color: #000000;
+}
+
+span.txt-bold {
+    font-weight: 700;
+}
+
+span.txt-purple {
+    color: #683dcc;
+}
+
+span.bell-f {
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+    background: url(../../images/newsfeed/icon-bell.png) no-repeat;
+    background-size: 16px 16px;
+    background-position: center;
+}
+
+span.gift-f {
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+    background: url(../../images/newsfeed/icon-gift.png) no-repeat;
+    background-size: 16px 16px;
+    background-position: center;
+}
+
+span.user-f {
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+    background: url(../../images/newsfeed/icon-user.png) no-repeat;
+    background-size: 16px 16px;
+    background-position: center;
+}
+
+/* ///// layout ///// */
+
+header {
+    width: 100%;
+    min-height: 90px;
+    min-height: 9.258064516129032%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    /* width: 27.08333333333333%; */
+    order: 1;
+}
+
+header .logo a img {
+    width: 100px;
+}
+
+header .ico-menu {
+    position: absolute;
+    width: auto;
+    top: 35px;
+    top: 34.5%;
+    right: 25px;
+    right: 4%;
+    z-index: 30;
+}
+
+header .ico-menu img {
+    width: 80%;
+}
+
+#main-banner img {
+    width: 100%;
+}
+
+section {
+    padding-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.4em;
+    color: #000000;
+    text-align: center;
+}
+
+section .title {
+    font-weight: 700;
+}
+
+section .content {
+    margin-top: 4px;
+    margin-top: 0.2rem;
+    font-weight: 300;
+}
+
+section .swiper-container.section {
+    margin-top: 30px;
+}
+
+section button {
+    width: 45%;
+    height: 40px;
+    margin-top: 23px;
+    border: 1px solid black;
+    font-size: 13px;
+}
+
+section button#btn-join {
+    width: 55%;
+}
+
+section.inner-banner img {
+    width: 100%;
+}
+
+section#main-banner {
+    padding-top: 0px;
+}
+
+section.sec-2, section.sec-3 {
+    background: #f7f7f7;
+}
+
+section.sec-3 .benefit {
+    margin-top: 20px;
+}
+
+section.sec-3 img {
+    width: 100%;
+}
+
+section.sec-3 .btn-box {
+    padding-bottom: 50px;
+}
+
+.sec-5 .title {
+    padding-bottom: 16px;
+}
+
+.sec-5 ul {
+    width: 94%;
+    margin: 0 auto;
+    border-top: 3px solid #cfcfcf;
+}
+
+.sec-5 ul li {
+    height: 50px;
+    text-align: left;
+    font-size: 0.6rem;
+    border-bottom: 1px solid #999999;
+}
+
+.sec-5 ul li span {
+    line-height: 4.6;
+}
+
+.sec-5 ul li span.type {
+    display: inline-block;
+    width: 66px;
+}
+
+.sec-5 ul li span.subject {
+    display: inline-block;
+    width: 145px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.sec-5 ul li span.date {
+    font-size: 0.4rem;
+}
+
+section.sec-6 img {  /* 임시 작업 */
+    width: 100%;
+}
+
+.sec-6 .sns-list {
+    margin-top: 30px;
+}
+
+.sec-7 .map-info {
+    font-size: 0.8rem;
+}
+
+.sec-7 p {
+    padding-bottom : 8px;
+}
+
+.sec-7 img {
+    width: 100%;
+}
+
+.sec-7 .map {
+    margin-top: 20px;
+}
+
+.sec-7 .map-info {
+    margin-top: 20px;
+}
+
+.sec-7 .map-info .opentime {
+    width: 80%;
+    padding: 10px 10px;
+    padding-top: 12px;
+    margin: 1rem auto;
+    background: #f5f5f5;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.6rem;
+    color: #ffffff;
+    background: #333333;
+}
+
+footer a {
+    color: #cccccc;
+}
+
+footer li {
+    padding: 14px 0;
+    text-align: center;
+    border-bottom: 1px solid #424242;
+}
+
+footer li p {
+    padding: 4px 0;
+}
+
+footer .footer-icobox {
+    padding: 16px 0;
+}
+
+footer .footer-icobox a {
+    margin: 0 12px;
+}
+
+footer .footer-icobox img {
+    width: 36px;
+}
+
+
+
+/* ///// swiper banner style /////*/
+#main-banner .swiper-container {
+    width: 100%;
+    max-height: 365px;
+}
+
+section .swiper-container {
+    max-height : 380px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    height: 20px !important; 
+}
+
+
+
+@media all and (min-width:768px){
+
+}
+
+@media all and (min-width:960px){
+    
+}
