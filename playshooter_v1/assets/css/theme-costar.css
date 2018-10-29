@@ -1,0 +1,192 @@
+html, body, .view {
+  height: 100%; 
+}
+
+body {
+    font-family: 'NanumSquare', 'sans-serif';
+}
+
+
+@media (max-width: 740px) {
+    .full-page-intro {
+      height: 1000px; 
+    } 
+  }
+  
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+    .navbar {
+      background-color: #1C2331; } }
+
+
+
+/*
+============================================================
+ Commons 
+============================================================
+*/
+
+.fa, .fas, .fab {
+    vertical-align: middle;
+}
+
+
+
+.co-nav {
+    border: 1px solid red;
+    background-color: #e7e7e7;
+}
+
+.dropdown-toggle::after {
+    /* display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+     */
+    border: 0px solid black;
+}
+
+.co-nav .fa-bars {
+    padding-left: 0.2rem;
+}
+
+header .row .a {
+    border: 1px solid orange;
+}
+
+.right-nav-bar {
+    /* display: inline-block; */
+    /* border: 1px solid blue; */
+}
+
+.co-nav {
+    margin-top: 100px;
+}
+
+.co-h {
+    height: 1000px;
+}
+
+button { border: 1px solid rgb(0, 0, 0);margin: 0.25em;padding: 0 1em;} /* 180601 Add */
+
+.co-btn-white-black {
+    cursor: pointer; 
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 40px;
+    border: 1px solid #e3e8f0;
+}
+
+.co-menu {
+    display: inline-block !important;
+}
+
+.right-nav-bar i.fa-search {
+    cursor: pointer;
+}
+
+
+/*
+============================================================
+ MyStyle 
+============================================================
+*/
+
+nav {
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+a.navbar-brand {
+    font-size: 0.8rem;
+}
+
+a.navbar-brand.nav-logo {
+    font-family: 'Bahagia';
+    font-size: 2.5rem;
+}
+
+.full-page-intro {
+    background-color: #000000;
+    height: 850px;  /* smPark 모바일일때 수정할 필요가 있을듯 */
+    width: 100%;
+}
+
+.index-main {
+    overflow: auto;
+    position: relative;
+    background-image: url(../images/index/img-main-active.jpg);
+    /* background-image: url(../images/index/img-main-active2.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgba(201, 201, 234, 0.1); */
+}
+
+.index-main:before {
+    content: '';
+    position: absolute;
+    top: 0; left:0; right:0; bottom:0;
+    background: inherit;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.mask {
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5), inset 0 0 100px rgba(0, 0, 0, 0.2);
+    background: rgba(66, 66, 66, 0.6);
+}
+
+.index-main .mask .container {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
+
+.center-img img {
+    width: 100%;
+}
+
+.center-img img.icon-like {
+    width: 49px;
+    height: 49px;
+    bottom: 0px;
+    right: -50px;
+}
+
+.arrow-nav {
+    font-size: 2rem;
+}
+
+
+
+
+
+footer {
+    font-family: 'NanumSquare';
+    background-color: #222222;
+}
+
+.footer-logo {
+    font-family: 'Bahagia';
+    font-size: 42px;
+}
+
+.footer-logo ~ p {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: #666666;
+}

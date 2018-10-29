@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url(../font/nanum/NanumSquareR.eot);
+    src: url(../font/nanum/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(../font/nanum/NanumSquareR.woff) format('woff'),
+         url(../font/nanum/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+font-family: 'NanumSquare';
+font-weight: 700;
+src: url(../font/nanum/NanumSquareB.eot);
+src: url(../font/nanum/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+        url(../font/nanum/NanumSquareB.woff) format('woff'),
+        url(../font/nanum/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+font-family: 'NanumSquare';
+font-weight: 800;
+src: url(../font/nanum/NanumSquareEB.eot);
+src: url(../font/nanum/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+        url(../font/nanum/NanumSquareEB.woff) format('woff'),
+        url(../font/nanum/NanumSquareEB.ttf) format('truetype');
+}
+@font-face {
+font-family: 'NanumSquare';
+font-weight: 300;
+src: url(../font/nanum/NanumSquareL.eot);
+src: url(../font/nanum/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+        url(../font/nanum/NanumSquareL.woff) format('woff'),
+        url(../font/nanum/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Bahagia';
+font-weight: 300;
+src: url(../font/bahagia/Bahagia.eot);
+src: url(../font/bahagia/Bahagia.eot?#iefix) format('embedded-opentype'),
+        /* url(../font/bahagia/Bahagia.woff) format('woff'), */
+        url(../font/bahagia/Bahagia.ttf) format('truetype');
+}
