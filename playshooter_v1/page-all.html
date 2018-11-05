@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>플레이슈터</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/mdb.css">
+    <link rel="stylesheet" href="./assets/css/theme-costar.css">
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+  </head>
+  <body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="left-nav mr-auto d-none d-md-flex justify-content-center align-items-center">
+                        <a class="navbar-brand d-flex align-items-center" href="#">홈</a>
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">카테고리<i class="fas fa-bars pl-1"></i></a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">소메뉴1</a>
+                                    <a class="dropdown-item" href="#">소메뉴2</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">소메뉴3</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- center -->
+                    <div class="center-nav col-md-6 text-center nav-logo ml-4">
+                        <a class="navbar-brand nav-logo" href="./index.html">PlayShooter</a>
+                    </div>
+                    <!-- right -->
+                    <div class="right-nav ml-auto d-none d-md-flex justify-content-center align-items-center">
+                        <div class="search-icon">
+                            <i class="fas fa-search mr-2"></i>검색
+                        </div>
+                        <button class="co-btn-white-black ml-4">로그인</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    
+    <div class="media-list pt-5 mt-5">
+    <!-- container-fluid -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Swiper -->
+            <div class="list-content swiper-container px-5">
+                <div class="header-category-box w-100">
+                    <div class="row">
+                        <div class="col-md-6 header-category-title">< 모두보기 카테고리 ></div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test01"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test02"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test03"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test04"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">   
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test05"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test06"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test07"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test08"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='1' data-content-id="test09"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-detail row" data-category-id="1">
+            <div class="d-flex flex-column">
+                <div class="row">
+                    <div class="col-md-5 mx-auto">
+                        <div class="detail-header row text-center my-3">
+                            <div class="col-md-3 active">정보</div>
+                            <div class="col-md-3">관련 영상</div>
+                            <div class="col-md-3">극단</div>
+                            <div class="col-md-3">스태프</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-content-box row">
+                    <div class="detail-content-1 col-md-6">
+                        <div class="row pl-5">
+                            <div class="icon col-12">
+                                <ul class="icon-like"><li class="checkbox heart"></li></ul>
+                            </div>
+                            <div class="title col-12 pt-2">
+                                여우와 두루미
+                            </div>
+                            <div class="short-info col-12 py-2">
+                                <span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span>
+                            </div>
+                            <div class="col-12 pt-4">
+                                <p>2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다. 2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
+                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeIn">
+            <!-- Swiper -->
+            <div class="list-content swiper-container px-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test01"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test02"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test03"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test04"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test05"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test06"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test07"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test08"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='2' data-content-id="test09"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-detail row" data-category-id="2">
+            <div class="d-flex flex-column">
+                <div class="row">
+                    <div class="col-md-5 mx-auto">
+                        <div class="detail-header row text-center my-3">
+                            <div class="col-md-3 active">정보</div>
+                            <div class="col-md-3">관련 영상</div>
+                            <div class="col-md-3">극단</div>
+                            <div class="col-md-3">스태프</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-content-box row">
+                    <div class="detail-content-1 col-md-6">
+                        <div class="row pl-5">
+                            <div class="icon col-12">
+                                <ul class="icon-like"><li class="checkbox heart"></li></ul>
+                            </div>
+                            <div class="title col-12 pt-2">
+                                여우와 두루미
+                            </div>
+                            <div class="short-info col-12 py-2">
+                                <span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span>
+                            </div>
+                            <div class="col-12 pt-4">
+                                <p>2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다. 2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
+                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeIn">
+            <!-- Swiper -->
+            <div class="list-content swiper-container px-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test01"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test02"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test03"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test04"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test05"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test06"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test07"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test08"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='3' data-content-id="test09"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-detail row" data-category-id="3">
+            <div class="d-flex flex-column">
+                <div class="row">
+                    <div class="col-md-5 mx-auto">
+                        <div class="detail-header row text-center my-3">
+                            <div class="col-md-3 active">정보</div>
+                            <div class="col-md-3">관련 영상</div>
+                            <div class="col-md-3">극단</div>
+                            <div class="col-md-3">스태프</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-content-box row">
+                    <div class="detail-content-1 col-md-6">
+                        <div class="row pl-5">
+                            <div class="icon col-12">
+                                <ul class="icon-like"><li class="checkbox heart"></li></ul>
+                            </div>
+                            <div class="title col-12 pt-2">
+                                여우와 두루미
+                            </div>
+                            <div class="short-info col-12 py-2">
+                                <span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span>
+                            </div>
+                            <div class="col-12 pt-4">
+                                <p>2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다. 2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
+                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeIn">
+            <!-- Swiper -->
+            <div class="list-content swiper-container px-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test01"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test02"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test03"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test04"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test05"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test06"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample1.png" alt="슬라이드 이미지1">
+                            <div class="media-detail">
+                                <p class="media-title">여우와 두루미</p>
+                            </div>
+                            <div class="media-detail-active">
+                                <p class="media-title">여우와 두루미</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test07"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample2.png" alt="슬라이드 이미지2">
+                            <div class="media-detail">
+                                <p class="media-title">옥탑방 고양이</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">옥탑방 고양이</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test08"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-card px-1">
+                            <img src="./assets/images/content/img-media-list-sample3.png" alt="슬라이드 이미지3">
+                            <div class="media-detail">
+                                <p class="media-title">마틸다</p>
+                            </div>
+                            <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                                <p class="media-title">마틸다</p>
+                                <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
+                                <p class="media-detail-content">
+                                    2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은 그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을 만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.
+                                </p>
+                                <div class="media-detail-arrow text-center" data-category-id='4' data-content-id="test09"><i class="fas fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-detail row" data-category-id="4">
+            <div class="d-flex flex-column">
+                <div class="row">
+                    <div class="col-md-5 mx-auto">
+                        <div class="detail-header row text-center my-3">
+                            <div class="col-md-3 active">정보</div>
+                            <div class="col-md-3">관련 영상</div>
+                            <div class="col-md-3">극단</div>
+                            <div class="col-md-3">스태프</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="detail-content-box row">
+                        <div class="detail-content-1 col-md-6">
+                            <div class="row pl-5">
+                                <div class="icon col-12">
+                                    <ul class="icon-like"><li class="checkbox heart"></li></ul>
+                                </div>
+                                <div class="title col-12 pt-2">
+                                    여우와 두루미
+                                </div>
+                                <div class="short-info col-12 py-2">
+                                    <span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span>
+                                </div>
+                                <div class="col-12 pt-4">
+                                    <p>2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.  2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다. 2차 세계 대전 시기, 유대인 출신의 미군 중위 알도 레인은그와 뜻을 같이 하는 사람들을 개떼들이라는 조직을만들고, 나치가 점령한 프랑스 마을에 잠입해 피의 복수극을 시작한다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
+                            <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- container-fluid end -->
+    </div>
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mx-auto d-flex flex-column mt-3 mb-5">
+                <!-- Contact details -->
+                <h5 class="footer-logo">PlayShooter</h5>
+                <p>플레이슈터<span class="mx-3">|</span>대표 : 강경호<span class="mx-3">|</span>통신판매업신고번호 : 제0000-서울종로구-0000호</p>
+                <p>주소 : 서울특별시 종로구 창경궁로35길 42-10번지</p>
+            </div>
+          </div>
+          <!-- Grid row -->
+      </footer>
+      <!-- Footer -->
+
+    <script src="./assets/js/jquery-3.3.1.js"></script>
+    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/mdb.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper.min.js"></script>
+
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+
+        // swiper initialization
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        $('.swiper-slide').on('mouseenter', function(e){
+            if (window.screen.width <= 576) { // 모바일 일땐 화면 전환
+                location.href = './page-all.html';
+                return;
+            }
+
+            $(this).addClass('active');
+            $(this).children('.media-detail').addClass('hidden');
+            $(this).children('.media-detail-active').addClass('visible');
+        })
+        
+        $('.swiper-slide').on('mouseleave', function(e){
+            if (window.screen.width <= 576) { // 모바일 이벤트 제어
+                return;
+            }
+
+            $(this).removeClass('active');
+            $(this).children('.media-detail').addClass('visible');
+            $(this).children('.media-detail-active').addClass('hidden');
+        });
+       
+        $('.media-detail-arrow').bind('click', function(){
+            var cate = $(this).data('category-id');
+
+            $('.list-detail').hide();
+            $('.list-detail[data-category-id=' + cate + ']').eq(0).show();
+
+            if($(this).data('content-id') == 'test01'){
+                $('.detail-content-box .detail-content-1 .icon img').attr('src', './assets/images/index/icon-heart.png');
+                $('.detail-content-box .detail-content-1 .title').text('여우와 두루미');
+                $('.detail-content-box .detail-content-2 img:first-child').attr('src', './assets/images/index/img-main-active.jpg');
+            } else {
+                $('.detail-content-box .detail-content-1 .icon img').attr('src', './assets/images/index/icon-heart-active.png');
+                $('.detail-content-box .detail-content-1 .title').text('옥탑방 고양이');
+                $('.detail-content-box .detail-content-2 img:first-child').attr('src', 'https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/z3ge4jvzl3td11vy1nto.jpg');
+            }
+        });
+
+        $('.detail-header div').bind('click', function(){
+            $(this).siblings('div').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('.checkbox').click(function(){
+            $(this).toggleClass('is-checked');
+        });
+
+      </script>
+  </body>
+</html>

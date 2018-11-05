@@ -21,7 +21,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
             <div class="container-fluid">
                 <div class="row w-100">
-                    <div class="left-nav mr-auto d-flex justify-content-center align-items-center">
+                    <div class="left-nav mr-auto d-none d-md-flex justify-content-center align-items-center">
                         <a class="navbar-brand d-flex align-items-center" href="#">홈</a>
                         <ul class="navbar-nav d-flex align-items-center">
                             <li class="nav-item dropdown">
@@ -36,9 +36,11 @@
                         </ul>
                     </div>
                     <!-- center -->
-                    <a class="navbar-brand col-md-6 text-center nav-logo" href="#">PlayShooter</a>
+                    <div class="center-nav col-md-6 text-center nav-logo ml-4">
+                        <a class="navbar-brand nav-logo" href="./index.html">PlayShooter</a>
+                    </div>
                     <!-- right -->
-                    <div class="right-nav ml-auto d-flex justify-content-center align-items-center">
+                    <div class="right-nav ml-auto d-none d-md-flex justify-content-center align-items-center">
                         <div class="search-icon">
                             <i class="fas fa-search mr-2"></i>검색
                         </div>
@@ -56,17 +58,18 @@
             <div class="container">
                 <!--Grid row-->
                 <div class="row wow fadeIn">    
-                    <div class="arrow-nav col-md-3 white-text text-center d-flex justify-content-center align-items-center waves-effect waves-ripple">
-                        <i class="fas fa-angle-left mr-3"></i> prev
+                    <div class=" hidden-sm-down arrow-nav last col-md-3 text-center d-none d-md-flex justify-content-center align-items-center">
+                        <img src="./assets/images/index/arrow-left-last.png" alt="prev icon">  PREV
                     </div>
                     <div class="center-img col-md-6 white-text text-center position-relative">
                         <img src="./assets/images/index/img-main-active.jpg" alt="main imgage">
+                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                         <ul class="icon-like position-absolute">
                             <li class="checkbox heart"></li>
                         </ul>
                     </div>
-                    <div class="arrow-nav col-md-3 white-text d-flex justify-content-center align-items-center waves-effect waves-ripple">
-                        next<i class="fas fa-angle-right ml-3"></i>
+                    <div class="arrow-nav col-md-3 d-none d-md-flex justify-content-center align-items-center">
+                        NEXT <img src="./assets/images/index/arrow-right.png" alt="next icon">
                     </div>
                 </div>
                 <div class="row">
@@ -87,13 +90,13 @@
             <div class="row">
                 <!-- Swiper -->
                 <div class="list-content swiper-container px-5">
-                    <div class="swiper-wrapper">
-                        <div class="header-category-box w-100">
-                            <div class="row">
-                                <div class="col-6 header-category-title">새로 올라온 작품</div>
-                                <div class="col-6 text-right"><a href="#">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
-                            </div>
+                    <div class="header-category-box">
+                        <div class="row">
+                            <div class="col-7 header-category-title">새로 올라온 작품</div>
+                            <div class="col-5 text-right"><a href="./page-all.html">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
                         </div>
+                    </div>
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="media-card px-1">
                                 <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
@@ -101,6 +104,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -117,6 +121,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -133,6 +138,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -149,6 +155,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -165,6 +172,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">   
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -181,6 +189,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -197,6 +206,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -213,6 +223,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -229,6 +240,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -243,7 +255,7 @@
             </div>
             <div class="list-detail row" data-category-id="1">
                 <div class="d-flex flex-column">
-                    <div class="row">
+                    <div class="row co-bg-black">
                         <div class="col-md-5 mx-auto">
                             <div class="detail-header row text-center my-3">
                                 <div class="col-md-3 active">정보</div>
@@ -253,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="detail-content-box row">
+                    <div class="detail-content-box row co-bg-black">
                         <div class="detail-content-1 col-md-6">
                             <div class="row pl-5">
                                 <div class="icon col-12">
@@ -270,8 +282,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-content-2 col-md-6">
+                        <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center">
                             <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
+                            <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                         </div>
                     </div>
                 </div>
@@ -279,13 +292,13 @@
             <div class="row wow fadeIn">
                 <!-- Swiper -->
                 <div class="list-content swiper-container px-5">
-                    <div class="swiper-wrapper">
-                        <div class="header-category-box w-100">
-                            <div class="row">
-                                <div class="col-6 header-category-title">창작자</div>
-                                <div class="col-6 text-right"><a href="#">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
-                            </div>
+                    <div class="header-category-box">
+                        <div class="row">
+                            <div class="col-6 header-category-title">창작자</div>
+                            <div class="col-6 text-right"><a href="./page-all.html">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
                         </div>
+                    </div>
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="media-card px-1">
                                 <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
@@ -293,6 +306,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -309,6 +323,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -325,6 +340,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -341,6 +357,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -357,6 +374,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -373,6 +391,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -389,6 +408,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -405,6 +425,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -421,6 +442,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -462,7 +484,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-content-2 col-md-6">
+                        <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center">
                             <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
                         </div>
                     </div>
@@ -471,13 +493,13 @@
             <div class="row wow fadeIn">
                 <!-- Swiper -->
                 <div class="list-content swiper-container px-5">
-                    <div class="swiper-wrapper">
-                        <div class="header-category-box w-100">
-                            <div class="row">
-                                <div class="col-6 header-category-title">극단</div>
-                                <div class="col-6 text-right"><a href="#">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
-                            </div>
+                    <div class="header-category-box">
+                        <div class="row">
+                            <div class="col-6 header-category-title">극단</div>
+                            <div class="col-6 text-right"><a href="./page-all.html">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
                         </div>
+                    </div>
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="media-card px-1">
                                 <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
@@ -485,6 +507,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -501,6 +524,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -517,6 +541,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -533,6 +558,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -549,6 +575,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -565,6 +592,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -581,6 +609,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -597,6 +626,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -613,6 +643,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -654,7 +685,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-content-2 col-md-6">
+                        <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center">
                             <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
                         </div>
                     </div>
@@ -663,13 +694,13 @@
             <div class="row wow fadeIn">
                 <!-- Swiper -->
                 <div class="list-content swiper-container px-5">
-                    <div class="swiper-wrapper">
-                        <div class="header-category-box w-100">
-                            <div class="row">
-                                <div class="col-6 header-category-title">극단</div>
-                                <div class="col-6 text-right"><a href="#">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
-                            </div>
+                    <div class="header-category-box">
+                        <div class="row">
+                            <div class="col-6 header-category-title">독백</div>
+                            <div class="col-6 text-right"><a href="./page-all.html">모두보기 <i class="fas fa-angle-right ml-1"></i></a></div>
                         </div>
+                    </div>
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="media-card px-1">
                                 <img src="./assets/images/index/img-main-active.jpg" alt="슬라이드 이미지1">
@@ -677,6 +708,7 @@
                                     <p class="media-title">여우와 두루미</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">여우와 두루미</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -693,6 +725,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                    <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -709,6 +742,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -741,6 +775,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -757,6 +792,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -789,6 +825,7 @@
                                     <p class="media-title">옥탑방 고양이</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">옥탑방 고양이</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -805,6 +842,7 @@
                                     <p class="media-title">마틸다</p>
                                 </div>
                                 <div class="media-detail-active">
+                                        <img class="icon-play" src="./assets/images/index/icon-play.png" alt="play-icon">
                                     <p class="media-title">마틸다</p>
                                     <p><span class="media-detail-level">청불</span><span class="media-detail-runtime">1시간 50분</span></p>
                                     <p class="media-detail-content">
@@ -846,7 +884,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="detail-content-2 col-md-6">
+                        <div class="detail-content-2 col-md-6 d-flex justify-content-center align-items-center">
                             <img src="./assets/images/index/img-main-active.jpg" alt="상세이미지1">
                         </div>
                     </div>
@@ -888,26 +926,24 @@
 
         // swiper initialization
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 7,
-            initialSlide: 3,
             // Responsive breakpoints   
-            breakpoints: {  
-                // when window width is <= 320px     
-                576: {       
-                    slidesPerView: 1,
-                    initialSlide: 1
-                },     
-                // when window width is <= 480px     
-                720: {       
-                    slidesPerView: 3,
-                    initialSlide: 1
-                },
-                992: {       
-                    slidesPerView: 4,
-                    initialSlide: 3
-                }
-            }, 
-            centeredSlides: true,
+            // breakpoints: {  
+            //     // when window width is <= 320px     
+            //     576: {       
+            //         slidesPerView: 1,
+            //         initialSlide: 1
+            //     },     
+            //     // when window width is <= 480px     
+            //     720: {       
+            //         slidesPerView: 3,
+            //         initialSlide: 1
+            //     },
+            //     992: {       
+            //         slidesPerView: 4,
+            //         initialSlide: 3
+            //     }
+            // }, 
+            slidesPerView: 'auto',
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -915,12 +951,36 @@
         });
 
         $('.swiper-slide').on('mouseenter', function(e){
+            if (window.screen.width <= 576) { // 모바일 일땐 화면 전환
+                var cate = 1;
+
+                $('.list-detail').hide();
+                $('.list-detail[data-category-id=' + cate + ']').eq(0).show();
+                // content-id
+                if($(this).data('content-id') == 'test01'){
+                    // 예시..
+                    $('.detail-content-box .detail-content-1 .icon img').attr('src', './assets/images/index/icon-heart.png');
+                    $('.detail-content-box .detail-content-1 .title').text('여우와 두루미');
+                    $('.detail-content-box .detail-content-2 img:first-child').attr('src', './assets/images/index/img-main-active.jpg');
+                } else {
+                    $('.detail-content-box .detail-content-1 .icon img').attr('src', './assets/images/index/icon-heart-active.png');
+                    $('.detail-content-box .detail-content-1 .title').text('옥탑방 고양이');
+                    $('.detail-content-box .detail-content-2 img:first-child').attr('src', 'https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/z3ge4jvzl3td11vy1nto.jpg');
+                }
+
+                return;
+            }
+
             $(this).addClass('active');
             $(this).children('.media-detail').addClass('hidden');
             $(this).children('.media-detail-active').addClass('visible');
         })
         
         $('.swiper-slide').on('mouseleave', function(e){
+            if (window.screen.width <= 576) { // 모바일 이벤트 제어
+                return;
+            }
+
             $(this).removeClass('active');
             $(this).children('.media-detail').addClass('visible');
             $(this).children('.media-detail-active').addClass('hidden');
@@ -953,11 +1013,11 @@
                 // 예시..
                 $('.detail-content-box .detail-content-1 .icon img').attr('src', './assets/images/index/icon-heart.png');
                 $('.detail-content-box .detail-content-1 .title').text('여우와 두루미');
-                $('.detail-content-box .detail-content-2 img').attr('src', './assets/images/index/img-main-active.jpg');
+                $('.detail-content-box .detail-content-2 img:first-child').attr('src', './assets/images/index/img-main-active.jpg');
             } else {
                 $('.detail-content-box .detail-content-1 .icon img').attr('src', './assets/images/index/icon-heart-active.png');
                 $('.detail-content-box .detail-content-1 .title').text('옥탑방 고양이');
-                $('.detail-content-box .detail-content-2 img').attr('src', 'https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/z3ge4jvzl3td11vy1nto.jpg');
+                $('.detail-content-box .detail-content-2 img:first-child').attr('src', 'https://dhgywazgeek0d.cloudfront.net/watcha/image/upload/c_fill,h_720,q_80,w_1280/z3ge4jvzl3td11vy1nto.jpg');
             }
         });
 
