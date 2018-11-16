@@ -8,17 +8,30 @@ body {
 }
 
 
-@media (max-width: 740px) {
+.full-page-intro {
+    background-color: #000000;
+    height: 850px;
+    width: 100%; 
+}
+
+@media (max-width: 576px) {
     .full-page-intro {
-      height: 1000px; 
-    } 
-  }
-  
+        height: 503px;
+    }
+}
+
+@media (max-width: 768px) {
+    .full-page-intro {
+        height: 690px;
+    }
+}
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
     .navbar {
-      background-color: #1C2331; } }
+      background-color: rgba(0, 0, 0, 0);
+    } 
+}
 
 
 
@@ -60,25 +73,59 @@ nav .dropdown-toggle::after {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
+.navbar .container-fluid .row.w-100 {
+    margin: 0;
+}
 
 a.navbar-brand {
     font-size: 0.8rem;
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: 576px) {
     .navbar.scrolling-navbar.top-nav-collapse {
         background-color: rgba(0, 0, 0, 1);
     }
 
 }
 
+.center-nav {
+    font-size : 1.5rem;
+    padding: 0;
+}
+
+.center-nav .row {
+    margin: 0;
+}
+
+.center-nav .c-left {
+    padding-left: 0;
+}
+
+.center-nav .c-right {
+    padding-right: 0;
+}
+
+.center-nav .c-left span {
+    font-size: 1rem;
+}
+
+.center-nav .c-right i.fa-search {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* .center-nav .fa-icon {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+} */
+
 a.navbar-brand.nav-logo {
+    margin: 0;
     font-family: 'Bahagia';
     font-size: 2.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     a.navbar-brand.nav-logo {
         font-size: 1.5rem;
     }
@@ -87,17 +134,9 @@ a.navbar-brand.nav-logo {
 .search-icon {
     cursor: pointer;
 }
-
-
-.full-page-intro {
-    background-color: #000000;
-    height: 850px;
-    width: 100%; 
-}
-
-@media (max-width: 600px) {
-    .full-page-intro {
-        height: 650px;
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
     }
 }
 
@@ -143,7 +182,6 @@ a.navbar-brand.nav-logo {
 
 .center-img img.icon-play {
     position: absolute;
-    /* width: 90px; */
     width: 20%;
     top: 50%;
     left: 50%;
@@ -161,6 +199,12 @@ a.navbar-brand.nav-logo {
     display: block;
     padding: 0;
     z-index: 1000;
+}
+
+@media (max-width: 762px) {
+    .icon-like {
+        right: 14px;
+    }
 }
 
 .checkbox {
@@ -275,20 +319,16 @@ a.navbar-brand.nav-logo {
 .main-title {
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .main-title span {
     font-size: 1rem;
 }
 
-.main-title span.level {
+span.level {
     border: 1px solid #fff;
 }
-
-.main-title span.runtime {
-
-}
-
 
 /* 슬라이드 리스트 스타일  */
 
@@ -365,6 +405,29 @@ a.navbar-brand.nav-logo {
     width: 100%;
     height: 100%;
 }
+
+.list-content .swiper-slide .media-detail, .media-detail-active {
+    z-index: 1000;
+}
+
+.media-card:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(48,48,48, 0.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,48,48, 0.8)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(48,48,48, 0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(48,48,48, 0.8) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(48,48,48, 0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(48,48,48, 0.8) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+
+  .media-card img{
+    display:block;
+  }
 
 .list-content .swiper-slide .media-detail, .media-detail-active {
     position: absolute;
@@ -455,6 +518,10 @@ a.navbar-brand.nav-logo {
     padding: 0 4px;
 }
 
+.media-list {
+    min-height: calc(100vh - 182px);
+}
+
 .media-list .list-detail .co-bg-black {
     background: #191919;
 }
@@ -467,19 +534,13 @@ a.navbar-brand.nav-logo {
     margin-right: 0;
 }
 
-/* 
-.list-detail div div.row div {
-    padding-left: 0;
-    padding-right: 0;
-} */
-
 .list-detail .detail-header {
     font-size: 1.4rem;
     font-weight: 700;
     border-bottom: 2px solid #666666;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .list-detail .detail-header {
         border-bottom: 0px;
     }
@@ -507,10 +568,6 @@ a.navbar-brand.nav-logo {
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
-}
-
-.detail-content-1 .short-info {
-    
 }
 
 .detail-content-1 .short-info .media-detail-level {

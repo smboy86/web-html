@@ -1,0 +1,56 @@
+.sub-layout {
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.sub-main {
+    margin-top: 62px;
+    padding: 0;
+}
+
+@media (min-width:576px) {
+    .sub-main {
+        margin-top: 94px;
+    }
+}
+
+.sub-main .row {
+    margin:0;
+}
+
+.sub-main img.icon-play {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-like {
+    right: 14px;
+}
+
+.main-detail-box p span {
+    font-size: 1rem;
+}
+
+.sub-detail hr {
+    border-top: 1px solid #444444;
+}
+
+.sub-layout .list-content {
+    height: auto;
+}
+
+.sub-layout .list-content .swiper-slide {
+    min-width: 293px;
+}
+
+.media-card {
+    position:relative;
+    display:inline-block;
+    width: 293px;
+    height: 166px;
+}
+
