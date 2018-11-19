@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex tip</title>
+    <style>
+/*
+Get Rid of Margin Hacks With Flexbox
+When working with column gutters you can get rid of nth-, first-, and last-child hacks by using flexbox's space-between property:
+
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list .person {
+  flex-basis: 23%;
+}
+
+Now column gutters always appear evenly-spaced.
+
+*/
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+
+
+        background-color: #e7e7e7;
+    }
+
+    .list .person {
+        flex-basis: 23%;
+
+
+        background-color: #bd7e7e;
+        text-align: center;
+        border: 1px solid #ffffff;
+    }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="person"><button>aaaa</button></div>
+        <div class="person">성민</div>
+        <div class="person">성민</div>
+        <div class="person">성민</div>
+        <div class="person">성민</div>
+    </div>
+</body>
+</html>
